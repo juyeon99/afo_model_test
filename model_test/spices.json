@@ -1,0 +1,6154 @@
+[
+	{
+		"id" : 801,
+		"name_en" : "Caraway",
+		"name_kr" : "",
+		"content_en" : "a sharp and sweet, lightly spicy note coming from the essential oil of caraway seeds when steam distilled.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 802,
+		"name_en" : "Cardamom",
+		"name_kr" : "",
+		"content_en" : "A sweet resinous aromatic and spicy note with a bitter aftertaste.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 803,
+		"name_en" : "Carolina Reaper",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 804,
+		"name_en" : "Cassia",
+		"name_kr" : "",
+		"content_en" : "cinnamon-like, spicy, earthy, aromatic facets, coming from Cinnamomum aromaticum. Very concentrated, intense spice note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 805,
+		"name_en" : "Chutney",
+		"name_kr" : "",
+		"content_en" : "a fantasy note inspired by the recipe of India cuisine and accompanying Far East dishes relying on a mix of spices, fruits and vegetables. Sweet, pungent, hot or cold in feel according to the effect desired.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 806,
+		"name_en" : "Cinnamon",
+		"name_kr" : "",
+		"content_en" : "A sweet and warm, powdery tenacious spicy note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 807,
+		"name_en" : "Cinnamon Leaf",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 808,
+		"name_en" : "Clove Leaf",
+		"name_kr" : "",
+		"content_en" : "The smell of clove leaf oil is milder than the clove oil, it is used as a replacement to higher-priced oils, like, for example, black pepper. It is also a source for some other perfume materials extracted from it.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 809,
+		"name_en" : "Cloves",
+		"name_kr" : "",
+		"content_en" : "A warm spicy note. Eugenol, eugenyl acetate and caryophyllene are, by and large, the main components of any essential oil obtained from the clove plant.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 810,
+		"name_en" : "Coffee",
+		"name_kr" : "",
+		"content_en" : "Coffee berries are produced by the evergreen bush of the genus Coffea. In perfumes the coffee note is an intense, dark roast facet that is linked to the cocoa facet of patchouli in Borneo 1834 (Lutens). Famously put in good use in A*men by Mugler, L'Or de Torrente",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 811,
+		"name_en" : "Coffee CO2",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 812,
+		"name_en" : "Coffee Tincture",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 813,
+		"name_en" : "Coriander",
+		"name_kr" : "",
+		"content_en" : "Coriander oil has a sweet suave spicy character, with soft woody, peppery nuances.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 814,
+		"name_en" : "Cubeb or Tailed Pepper",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 815,
+		"name_en" : "Cumin",
+		"name_kr" : "",
+		"content_en" : "a spice with an especially pungent, bitter-sour note that can resemble sweat. Polarizing, it can highlight a fragrance creation like no other and is nowadays often used to render an intimate, animalic note in abscence of animalics. Famously overdosed in Kingdom by Alexander McQueen.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 816,
+		"name_en" : "Curcuma (Turmeric)",
+		"name_kr" : "",
+		"content_en" : "a warm, earthy, spicy note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 817,
+		"name_en" : "Curry",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 818,
+		"name_en" : "Curry Tree",
+		"name_kr" : "",
+		"content_en" : "Also known as Murraya koenigii and \"sweet neem leaves\", this is a spicy aromatic note reminiscent of the leaves and seeds of the Indian peninsula growing tree. Featured in Oriental Lounge by The Different Company.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 819,
+		"name_en" : "Dill",
+		"name_kr" : "",
+		"content_en" : "a culinary herb rich in anethole with a delicate herbaceous and slightly spicy scent. Pairs well with other spicy herbs such as basil, tarragon, fennel or licorice in aromatic and oriental compositions.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 820,
+		"name_en" : "Fennel",
+		"name_kr" : "",
+		"content_en" : "a herbal, anise-tinged scent, used in fresh, aromatic, spicy blends.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 821,
+		"name_en" : "Fenugreek",
+		"name_kr" : "",
+		"content_en" : "the essence from the yellowish-golden seeds of Trigonella Foenum Graecum is used as a spice. It renders a maple-syrup note in fragrance, common also to helichrysum/immortelle blossom. The note is recognizable (via immortelle essence) in Sables by A.Goutal and (via fenugreek spice) in Santal Blush by Tom Ford.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 822,
+		"name_en" : "Galanga",
+		"name_kr" : "",
+		"content_en" : "a spicy balsamic pleasant fragrance. The oil is produced from rhizomes of Alpinia Officinarum.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 823,
+		"name_en" : "Ginger",
+		"name_kr" : "",
+		"content_en" : "A spicy fizzy top note, with a pronounced fresh citrus facet and piney nuance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 824,
+		"name_en" : "Green Coffee",
+		"name_kr" : "",
+		"content_en" : "Slightly sweet and neutral.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 825,
+		"name_en" : "Guinea Pepper",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 826,
+		"name_en" : "Indian Spices",
+		"name_kr" : "",
+		"content_en" : "Umbrella term used to refer to spices of the India subcontinent, comprising the most popular notes in its cuisine. Often curry centered, with accents of cinnamon, clove and cumin.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 827,
+		"name_en" : "Japanese Pepper",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 828,
+		"name_en" : "Kaempferia Galanga",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 829,
+		"name_en" : "Kopi Luwak Coffee",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 830,
+		"name_en" : "Licorice",
+		"name_kr" : "",
+		"content_en" : "A sweet soft spicy anisic fragrance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 831,
+		"name_en" : "Mace",
+		"name_kr" : "",
+		"content_en" : "A spicy note, like a nutmeg, mace is its red covering with a more delicate smell.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 832,
+		"name_en" : "Mustard Seed",
+		"name_kr" : "",
+		"content_en" : "A sharp scent, reminiscent of acrylic paint. It is produced only from black mustard, white mustard oil doesn't really smell.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 833,
+		"name_en" : "Nutmeg",
+		"name_kr" : "",
+		"content_en" : "It is a fruit of Myristica fragrans, it has a spicy sweet facet with earthy and pungent base notes, and is used to provide an oriental spiciness that is subtler than the usual cinnamon-clove-vanilla bouquet of orientals, thus perfect for masculine and lighter woody fragrances. Notable example is Fahrenheit by Dior and Vetiver Sport by Guerlain.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 834,
+		"name_en" : "Oily Notes",
+		"name_kr" : "",
+		"content_en" : "Different materials give an oily effect, for example, narcissus.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 835,
+		"name_en" : "Oriental Notes",
+		"name_kr" : "",
+		"content_en" : "Oriental fragrance has changed its meaning quite significantly over the past several decades, especially under the influence of Arabian perfumery.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 836,
+		"name_en" : "Pepper",
+		"name_kr" : "",
+		"content_en" : "A hot and bracing note, short-lived and earthy spice, rendered through steam distillation of the berries of the piper negrum bush, which is very popular as a bright accent top note in fragrances. Featured prominently in Piper Negrum by L.Villoresi.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 837,
+		"name_en" : "Peppertree",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 838,
+		"name_en" : "Pimento",
+		"name_kr" : "",
+		"content_en" : "A very hot fiery pepper note. (Pimenta berry oil is a different material though, referring to allspice).",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 839,
+		"name_en" : "Pimento Leaf",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 840,
+		"name_en" : "Pimento Seeds",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 841,
+		"name_en" : "Pink Pepper",
+		"name_kr" : "",
+		"content_en" : "A fresh spicy floral and herbal top note with rosy nuance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 842,
+		"name_en" : "Priprioca",
+		"name_kr" : "",
+		"content_en" : "An earthy aromatic woody note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 843,
+		"name_en" : "Saffron",
+		"name_kr" : "",
+		"content_en" : "A refined note coming from stamens of Crocus sativus, a small flower in the Iris family known since antiquity. Its odor profile is bittersweet, leathery, soft and intimate, with an earthy base note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 844,
+		"name_en" : "Safraleine",
+		"name_kr" : "",
+		"content_en" : "the essence of saffron, leathery-suede soft with bittersweet tonalities",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 845,
+		"name_en" : "Sesame",
+		"name_kr" : "",
+		"content_en" : "Fragrant note that recalls the sesame seeds of Sesamum indicum, familiar from its use in cuisine all over the world. Comforting, earthy, bread-like and soft.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 846,
+		"name_en" : "Siam Cardamom",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 847,
+		"name_en" : "Sichuan Pepper",
+		"name_kr" : "",
+		"content_en" : "a peppery note coming from the berries of the Zanthoxylum plant. It is aromatic, herbal, spicy, with a citrus touch.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 848,
+		"name_en" : "Spicy Notes",
+		"name_kr" : "",
+		"content_en" : "There are different spices obtained from different sources: seeds, fruits, barks, roots, leaves, and flowers. They can be fresh or warm, sour or sweet.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 849,
+		"name_en" : "Spiked Pepper",
+		"name_kr" : "",
+		"content_en" : "With a fougère green aroma, it exudes spiciness and oily nuances when crumbled.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 850,
+		"name_en" : "Star Anise",
+		"name_kr" : "",
+		"content_en" : "A soft powdery floral spicy fragrance with nuances of licorice.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 851,
+		"name_en" : "Sumac",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 852,
+		"name_en" : "Tamarind",
+		"name_kr" : "",
+		"content_en" : "a bittersweet gourmand note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 853,
+		"name_en" : "Timur",
+		"name_kr" : "",
+		"content_en" : "Spicy fresh, airy, slightly salty, reminiscent of grapefruit.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 854,
+		"name_en" : "Tonka Bean",
+		"name_kr" : "",
+		"content_en" : "Tonka beans - fruits of Dipteryx odorata, a tropical tree native to Central and South America - contain 1-3% of coumarin. Tonka bean absolute contains 90% of coumarin. Depends on the amount, the scent varies from green grassy to sweet tobacco almond.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 855,
+		"name_en" : "Toscanol",
+		"name_kr" : "",
+		"content_en" : "anisic molecule aimed to give an agrestic and sweet-spicy note to fragrances with hints of licorice, aiding diffusion and projection. It can substitute basil and tarragon",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 856,
+		"name_en" : "Ultravanil™",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 857,
+		"name_en" : "Vanilla",
+		"name_kr" : "",
+		"content_en" : "An ever popular fragrance note, known mostly through its synthetic variant vanillin, which is sweet, cozy, comforting, with a pleasing cookie-baking feeling to it. Alongside amber, the reference note for the Oriental family of scents (The most famous classic being Shalimar). The real vanilla pod has darker facets that recall treacle and booze with off notes. Simple vanillas (Victoria's Secret Love to Dream, Charlie Touch, TBS Vanilla, Coty Vanilla Musk) have become increasingly popular with the adolescent market, giving rise to the umbiquity of the gourmand category of scents, while complex, earthier vanillas are appearing steadily in the niche sector (Spirituese Double Vanille by Guerlain, Tihota Indult, Montale Vanille Absolue).",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 858,
+		"name_en" : "Wan Sao Lhong",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 859,
+		"name_en" : "Wasabi",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 860,
+		"name_en" : "Water Pepper",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 861,
+		"name_en" : "West Indian Bay",
+		"name_kr" : "",
+		"content_en" : "Note that smells of the aromatic, myrtle-like Pimenta racemosa tree leaves. Featured in bois de Turquie (MPG) and Capucci pour Homme.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 862,
+		"name_en" : "Acetyl Furan",
+		"name_kr" : "",
+		"content_en" : "very powerful and pungent aroma chemical with sweet balsamic scent, caramellic nutty gourmand tones with cinnamic and slightly floral aspects, roasted coffee and cacao facets and some milky lactonic undertones reminding the smell of baked goods",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 863,
+		"name_en" : "Agave Nectar",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 864,
+		"name_en" : "Apple Pie",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 865,
+		"name_en" : "Baba (Italian dessert)",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 866,
+		"name_en" : "Baked Apple",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 867,
+		"name_en" : "Baklava",
+		"name_kr" : "",
+		"content_en" : "An extremely sweet syrupy dessert with nuts, a fantasy note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 868,
+		"name_en" : "Biscuit",
+		"name_kr" : "",
+		"content_en" : "a fantasy gourmand note",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 869,
+		"name_en" : "Bonbon",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 870,
+		"name_en" : "Bread",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 871,
+		"name_en" : "Brioche",
+		"name_kr" : "",
+		"content_en" : "Freshly baked sweet bread.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 872,
+		"name_en" : "Brown Sugar",
+		"name_kr" : "",
+		"content_en" : "a thick, vanilla-pod-reminiscent and slightly boozy note in perfumes",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 873,
+		"name_en" : "Brownie",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 874,
+		"name_en" : "Bubbaloo",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 875,
+		"name_en" : "Bubble Gum",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 876,
+		"name_en" : "Burnt Sugar",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 877,
+		"name_en" : "Butter",
+		"name_kr" : "",
+		"content_en" : "a creamy buttery note from different sources.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 878,
+		"name_en" : "Buttercream",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 879,
+		"name_en" : "Butterscotch",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 880,
+		"name_en" : "Cacao Butter",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 881,
+		"name_en" : "Cake",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 882,
+		"name_en" : "Calissons d'Aix",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 883,
+		"name_en" : "Candied Fruits",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 884,
+		"name_en" : "Candied Ginger",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 885,
+		"name_en" : "Candied Orange",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 886,
+		"name_en" : "Candies",
+		"name_kr" : "",
+		"content_en" : "a sweet fantasy note that recalls sugar and hard candy with the scent of assorted fruits and flavors.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 887,
+		"name_en" : "Canelé",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 888,
+		"name_en" : "Caramel",
+		"name_kr" : "",
+		"content_en" : "A candy-deep, sensual and rich, creamy buttery lactonic note that enriches gourmand perfumes and adds sweetness to floral compositions.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 889,
+		"name_en" : "Cassata Siciliana",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 890,
+		"name_en" : "Cereals",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 891,
+		"name_en" : "Chamallow",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 892,
+		"name_en" : "Cheesecake",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 893,
+		"name_en" : "Cherry Milk",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 894,
+		"name_en" : "Cherry Syrup",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 895,
+		"name_en" : "Chocolate Fudge",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 896,
+		"name_en" : "Chocolate Sauce",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 897,
+		"name_en" : "Chocolate Truffle",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 898,
+		"name_en" : "Churros",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 899,
+		"name_en" : "Coconut Pie",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 900,
+		"name_en" : "Coconut Powder",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 901,
+		"name_en" : "Condensed Milk",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 902,
+		"name_en" : "Cone Waffle",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 903,
+		"name_en" : "Confetti (Sugared Almonds)",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 904,
+		"name_en" : "Cookie",
+		"name_kr" : "",
+		"content_en" : "a sweet fantasy note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 905,
+		"name_en" : "Cookie Dough",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 906,
+		"name_en" : "Cosmofruit™ (IFF)",
+		"name_kr" : "",
+		"content_en" : "Sweet, floral, rosy",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 907,
+		"name_en" : "Cotton Candy",
+		"name_kr" : "",
+		"content_en" : "a note focused on ethyl maltol, sweet sugary sticky and powdery.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 908,
+		"name_en" : "Cream",
+		"name_kr" : "",
+		"content_en" : "A fantasy note or aspect of a number of ingredients.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 909,
+		"name_en" : "Creamsicle",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 910,
+		"name_en" : "Crème Brûlée",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 911,
+		"name_en" : "Croissant",
+		"name_kr" : "",
+		"content_en" : "a fantasy gourmand note that has buttery facets but also a starch and baked feel.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 912,
+		"name_en" : "Cupcake",
+		"name_kr" : "",
+		"content_en" : "a modern gourmand note that exploits the craziness for brightly colored desserts with cream and chocolate",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 913,
+		"name_en" : "Custard",
+		"name_kr" : "",
+		"content_en" : "a sweet delicious cream.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 914,
+		"name_en" : "Dark Chocolate",
+		"name_kr" : "",
+		"content_en" : "A deep and rich gourmand note, rather bitter than sweet.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 915,
+		"name_en" : "Dates",
+		"name_kr" : "",
+		"content_en" : "a sweet fruity sugary note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 916,
+		"name_en" : "Donut or Doughnut",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 917,
+		"name_en" : "Dulce de Leche",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 918,
+		"name_en" : "Eggnog",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 919,
+		"name_en" : "Fougassette",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 920,
+		"name_en" : "French Pastries",
+		"name_kr" : "",
+		"content_en" : "A sweet fantasy note of sweets with cream and fruits.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 921,
+		"name_en" : "Fresh Cream",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 922,
+		"name_en" : "Frosting [Glacé]",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 923,
+		"name_en" : "Gelatin",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 924,
+		"name_en" : "Gianduia",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 925,
+		"name_en" : "Gingerbread",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 926,
+		"name_en" : "Gourmand Accord",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 927,
+		"name_en" : "Griotte Cherries",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 928,
+		"name_en" : "Halva",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 929,
+		"name_en" : "Hazelnut Cocoa Spread",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 930,
+		"name_en" : "Honey",
+		"name_kr" : "",
+		"content_en" : "A sweet, gourmand scent with animalic and powdery floral nuances.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 931,
+		"name_en" : "Honeycomb",
+		"name_kr" : "",
+		"content_en" : "A sweet floral scent of honey and beeswax.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 932,
+		"name_en" : "Horchata",
+		"name_kr" : "",
+		"content_en" : "Nutty, sweet, little bit earthy (tiger nuts).",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 933,
+		"name_en" : "Ice cream",
+		"name_kr" : "",
+		"content_en" : "a fantasy note of the sweet dessert.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 934,
+		"name_en" : "Icing Pink",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 935,
+		"name_en" : "Jelly",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 936,
+		"name_en" : "Jellybean",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 937,
+		"name_en" : "Jiuniang (Sweet Fermented Rice Wine)",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 938,
+		"name_en" : "Kulfi",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 939,
+		"name_en" : "Lemon Pie",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 940,
+		"name_en" : "Loukhoum",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 941,
+		"name_en" : "Macarons",
+		"name_kr" : "",
+		"content_en" : "popular fantasy note recreating the bittersweet and savory feel of a macaron dessert, built on almond aroma and heliotrope essence.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 942,
+		"name_en" : "Madeleine",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 943,
+		"name_en" : "Maple Syrup",
+		"name_kr" : "",
+		"content_en" : "a sweet and spicy note that is built on the fenugreek spice, helichrysum and on pyrazines, giving a toasted caramelic and savory note all at once",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 944,
+		"name_en" : "Maraschino Cherry",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 945,
+		"name_en" : "Marmalade",
+		"name_kr" : "",
+		"content_en" : "bittersweet fruity note that recalls hesperidic fruits, based on the scent of bitter orange rind",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 946,
+		"name_en" : "Marron Glacé",
+		"name_kr" : "",
+		"content_en" : "A sweet and savory note of glazed chestnuts.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 947,
+		"name_en" : "Marshmallow",
+		"name_kr" : "",
+		"content_en" : "a sweet sugary powdery note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 948,
+		"name_en" : "Marzipan",
+		"name_kr" : "",
+		"content_en" : "an almondy note with a bittersweet facet, reminiscent of the similarly-named almond paste used in decorating and filling desserts",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 949,
+		"name_en" : "Meringues",
+		"name_kr" : "",
+		"content_en" : "fluffy sugary fantasy note that is lighter than caramel but still sweet like boiled sugar.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 950,
+		"name_en" : "Milk Cream",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 951,
+		"name_en" : "Milk Mousse",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 952,
+		"name_en" : "Milkshake",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 953,
+		"name_en" : "Molasses",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 954,
+		"name_en" : "Nougat",
+		"name_kr" : "",
+		"content_en" : "nutty sweet dessert note that plays on hazelnut and almond tones",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 955,
+		"name_en" : "Nutella",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 956,
+		"name_en" : "Oatmilk",
+		"name_kr" : "",
+		"content_en" : "Milky grain smell",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 957,
+		"name_en" : "Palm Sugar",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 958,
+		"name_en" : "Pancake",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 959,
+		"name_en" : "Panettone",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 960,
+		"name_en" : "Panna Cotta",
+		"name_kr" : "",
+		"content_en" : "milky and coffee note that recalls the famous Italian dessert",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 961,
+		"name_en" : "Pastiera Napoletana",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 962,
+		"name_en" : "Peach Cream",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 963,
+		"name_en" : "Pear Ice Cream",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 964,
+		"name_en" : "Pistachio Spread Cream",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 965,
+		"name_en" : "Popcorn",
+		"name_kr" : "",
+		"content_en" : "a savory note, comfortable, smoky, and satisfying.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 966,
+		"name_en" : "Praline",
+		"name_kr" : "",
+		"content_en" : "A modern synthetic accord with a soft, but intense sweet lactonic balsamic fragrance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 967,
+		"name_en" : "Profiterole",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 968,
+		"name_en" : "Pudding",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 969,
+		"name_en" : "Puff Pastry",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 970,
+		"name_en" : "Rainbow Sorbet",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 971,
+		"name_en" : "Red Fruits Sorbet",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 972,
+		"name_en" : "Rice Pudding",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 973,
+		"name_en" : "Rose Jam",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 974,
+		"name_en" : "Rose Milk",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 975,
+		"name_en" : "Sacher Torte",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 976,
+		"name_en" : "Salted Caramel",
+		"name_kr" : "",
+		"content_en" : "Aroma with a predominance of sweetness and a salty base, providing balance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 977,
+		"name_en" : "Salted Caramel Fudge",
+		"name_kr" : "",
+		"content_en" : "A fantasy note of a sweet caramel gourmand scent which sweetness is stressed by a salty nuance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 978,
+		"name_en" : "Sorbet",
+		"name_kr" : "",
+		"content_en" : "a sweet or sour/sweet note depending on the fruit used as its ingredient.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 979,
+		"name_en" : "Souffle",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 980,
+		"name_en" : "Sprinkles",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 981,
+		"name_en" : "Spun Sugar",
+		"name_kr" : "",
+		"content_en" : "light sugar note that recalls the decoration of desserts.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 982,
+		"name_en" : "Strawberry Fizz Candy",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 983,
+		"name_en" : "Strawberry Syrup",
+		"name_kr" : "",
+		"content_en" : "A sweet fruity note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 984,
+		"name_en" : "Sugar",
+		"name_kr" : "",
+		"content_en" : "A very popular sugary sweet accord can be also fruity, chocolate or compliment any other note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 985,
+		"name_en" : "Sugar Syrup",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 986,
+		"name_en" : "Tartine",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 987,
+		"name_en" : "Tiramisu",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 988,
+		"name_en" : "Toast",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 989,
+		"name_en" : "Toffee",
+		"name_kr" : "",
+		"content_en" : "a sweet sugary, comforting, caramel note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 990,
+		"name_en" : "Tropézienne Tarte",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 991,
+		"name_en" : "Vanilla Caviar",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 992,
+		"name_en" : "Waffle",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 993,
+		"name_en" : "White Chocolate",
+		"name_kr" : "",
+		"content_en" : "a sweet and less bitter chocolate note, with creamy, lactonic nuances.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 994,
+		"name_en" : "White Chocolate Truffle",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 995,
+		"name_en" : "Whoopie Pie",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 996,
+		"name_en" : "Yogurt",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 997,
+		"name_en" : "Zefir",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 998,
+		"name_en" : "Agarwood (Oud)",
+		"name_kr" : "",
+		"content_en" : "A pathological secretion of the aquillaria tree, a rich, musty woody-nutty scent that is highly prized in the Middle East. In commercial perfumery, it's safe to say all \"oud\" is a recreated synthetic note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 999,
+		"name_en" : "Akigalawood",
+		"name_kr" : "",
+		"content_en" : "A synthetic molecule reminiscent of patchouli with a hint of pepper and fine agarwood.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1000,
+		"name_en" : "Alder",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1001,
+		"name_en" : "Almond tree",
+		"name_kr" : "",
+		"content_en" : "A green, nutty and woody fantasy note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1002,
+		"name_en" : "Amaranth",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1003,
+		"name_en" : "Amburana Bark",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1004,
+		"name_en" : "Amburana Wood",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1005,
+		"name_en" : "Amyris",
+		"name_kr" : "",
+		"content_en" : "A name referring to either amyris elemifera or amyris balsamifera. It has a fresh piney balsamic fragrance with a citrus nuance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1006,
+		"name_en" : "Apple Tree",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1007,
+		"name_en" : "Araucaria",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1008,
+		"name_en" : "Araucaria",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1009,
+		"name_en" : "Arbutus (Madrona, Bearberry Tree)",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1010,
+		"name_en" : "Argan Tree",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1011,
+		"name_en" : "Aspen",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1012,
+		"name_en" : "Australian Blue Cypress",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1013,
+		"name_en" : "Bamboo",
+		"name_kr" : "",
+		"content_en" : "A woody aromatic fragrance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1014,
+		"name_en" : "Baobab",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1015,
+		"name_en" : "Bark",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1016,
+		"name_en" : "Beech",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1017,
+		"name_en" : "Belambra Tree",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1018,
+		"name_en" : "Birch",
+		"name_kr" : "",
+		"content_en" : "Birch wood itself has a sweet woody sappy green fragrance. Birch tar is associated with leather fragrances (so called Russian leather).",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1019,
+		"name_en" : "Black Hemlock or Tsuga",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1020,
+		"name_en" : "Black Spruce",
+		"name_kr" : "",
+		"content_en" : "A conifer tree that gives a dark-smelling, fir-like coniferous smell to mostly natural perfumes.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1021,
+		"name_en" : "Blackwood",
+		"name_kr" : "",
+		"content_en" : "Coming from the East Asian Dalbergia latifolia species. An uncommon, earthy, woody \"note\".",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1022,
+		"name_en" : "Blonde Woods",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1023,
+		"name_en" : "Brazilian Rosewood",
+		"name_kr" : "",
+		"content_en" : "A rich floral-woody note, slightly spicy.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1024,
+		"name_en" : "Buddha Wood",
+		"name_kr" : "",
+		"content_en" : "woody, balsamic, mossy, deep, smoky, with vetiver and sandalwood facetes",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1025,
+		"name_en" : "Buxus",
+		"name_kr" : "",
+		"content_en" : "A bush also known as boxwood. Not very common, but useful as a woody note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1026,
+		"name_en" : "Cabreuva",
+		"name_kr" : "",
+		"content_en" : "a delicate sweet woody smell with a fruity nuance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1027,
+		"name_en" : "Cambodian Oud",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1028,
+		"name_en" : "Canadian Balsam",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1029,
+		"name_en" : "Carob Tree",
+		"name_kr" : "",
+		"content_en" : "sweet, date-like note with cocoa powder facets.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1030,
+		"name_en" : "Cascarilla",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1031,
+		"name_en" : "Cashmir wood",
+		"name_kr" : "",
+		"content_en" : "A synthetic material which is also known as Cashmeran, a musky-woody component, popular in many modern compositions.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1032,
+		"name_en" : "Cedar",
+		"name_kr" : "",
+		"content_en" : "An soft woody note coming from either the Atlas Mountains (Morocco) or the Virginia (US) cedarwood. There are also many cedar-smelling synthetics in use.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1033,
+		"name_en" : "Chalood Bark",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1034,
+		"name_en" : "Cherry Tree",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1035,
+		"name_en" : "Chinese Oud",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1036,
+		"name_en" : "Chypre Notes",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1037,
+		"name_en" : "Clearwood",
+		"name_kr" : "",
+		"content_en" : "A molecule by Firmenich: soft woody transparent, patchouli without dirty noise, earthy hue.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1038,
+		"name_en" : "Cocobolo",
+		"name_kr" : "",
+		"content_en" : "Fantasy note inspired by the bright reddish-brown decorative Dalbergia retusa wood.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1039,
+		"name_en" : "Coconut Tree",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1040,
+		"name_en" : "Coffee Tree",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1041,
+		"name_en" : "Cork",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1042,
+		"name_en" : "Cottonwood (Poplar)",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1043,
+		"name_en" : "Cypress",
+		"name_kr" : "",
+		"content_en" : "A dry woody earthy aromatic and very tenacious odor.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1044,
+		"name_en" : "Cypriol Oil or Nagarmotha",
+		"name_kr" : "",
+		"content_en" : "A powerful earthy aromatic woody fragrance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1045,
+		"name_en" : "Dark Patchouli",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1046,
+		"name_en" : "Ditax wood",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1047,
+		"name_en" : "Dreamwood",
+		"name_kr" : "",
+		"content_en" : "Sandalwood like, creamy, warm, comfortable, woodsy.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1048,
+		"name_en" : "Driftwood",
+		"name_kr" : "",
+		"content_en" : "a dry woody note with salty aromatic nuances.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1049,
+		"name_en" : "Dry Wood",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1050,
+		"name_en" : "Ducke",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1051,
+		"name_en" : "Ebony Tree",
+		"name_kr" : "",
+		"content_en" : "Evocative of the black decorative wood, it is a \"note\" appearing in niche compositions and woody fragrances where a darker element is desired.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1052,
+		"name_en" : "Elm",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1053,
+		"name_en" : "Eucalyptus",
+		"name_kr" : "",
+		"content_en" : "a camphorous aromatic woody note with fruity nuances.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1054,
+		"name_en" : "Fig tree",
+		"name_kr" : "",
+		"content_en" : "A complex, green powdery and silky note that evokes the milky, coconut-tinged sap of the fruit, the dark, bitter and dusty green of the leaves, as well as the bark of the tree and the earth underneath. Very popular in niche perfumery. The most celebrated examples are Premier Figuier (L'Artisan) and Philosykos (Diptyque).",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1055,
+		"name_en" : "Fir",
+		"name_kr" : "",
+		"content_en" : "Fir absolute is a sweet balsamic, aromatic green spicy fragrance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1056,
+		"name_en" : "Grass Tree",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1057,
+		"name_en" : "Guaiac Wood",
+		"name_kr" : "",
+		"content_en" : "Depends on the specific material the scent varies from sweet balsamic vanilla-like to woody smoky, leathery, tar-like.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1058,
+		"name_en" : "Hiba",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1059,
+		"name_en" : "Himalayan Cedar",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1060,
+		"name_en" : "Hinoki Wood",
+		"name_kr" : "",
+		"content_en" : "Famously highlighted in Hinoki by Comme des Garcons, it is a type of cypress that is prized in Japan. Evergreen smelling with lemony facets.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1061,
+		"name_en" : "Ho Wood",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1062,
+		"name_en" : "Incienso",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1063,
+		"name_en" : "Indian Oud",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1064,
+		"name_en" : "Indian Sandalwood",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1065,
+		"name_en" : "Indian Woods",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1066,
+		"name_en" : "Ironwood",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1067,
+		"name_en" : "Ishpink, Ocotea Quixos",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1068,
+		"name_en" : "Kowhai",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1069,
+		"name_en" : "Laotian Oud",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1070,
+		"name_en" : "Larch",
+		"name_kr" : "",
+		"content_en" : "Woody note evocative of the conifer tree growing in the colder countries of the Norther Hemisphere. Very uncommon.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1071,
+		"name_en" : "Lichen",
+		"name_kr" : "",
+		"content_en" : "the same as oakmoss.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1072,
+		"name_en" : "Liquidambar",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1073,
+		"name_en" : "Mahogany",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1074,
+		"name_en" : "Malaysian Oud",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1075,
+		"name_en" : "Mango Tree",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1076,
+		"name_en" : "Manuka",
+		"name_kr" : "",
+		"content_en" : "Related to the tea tree, it comes from the Leptospermum scoparium species.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1077,
+		"name_en" : "Maple",
+		"name_kr" : "",
+		"content_en" : "a sweetish woody note, reminiscent of maple syrup.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1078,
+		"name_en" : "Massoia",
+		"name_kr" : "",
+		"content_en" : "A milky-smelling woody note, famously used in Santal Massoia Hermes.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1079,
+		"name_en" : "Mesquite Wood",
+		"name_kr" : "",
+		"content_en" : "A strong and pleasant woody scent.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1080,
+		"name_en" : "Muhuhu",
+		"name_kr" : "",
+		"content_en" : "Woody note coming from the Brachylaena hutchinsii species of tree. Extremely uncommon.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1081,
+		"name_en" : "Mulberry plant",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1082,
+		"name_en" : "Mysore Sandalwood",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1083,
+		"name_en" : "Neem",
+		"name_kr" : "",
+		"content_en" : "Woody note coming from the Azadirachta indica species of tree. Extremely uncommon.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1084,
+		"name_en" : "Nootka",
+		"name_kr" : "",
+		"content_en" : "woody, aromatic with hints of grapefruit",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1085,
+		"name_en" : "Oak",
+		"name_kr" : "",
+		"content_en" : "An aromatic woody fragrance with eathy nuances.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1086,
+		"name_en" : "Oakmoss",
+		"name_kr" : "",
+		"content_en" : "An inky, bitter-smelling forest floor evocative, prized essence coming from the lichen that grows on oak trees in Europe (harvested in the Balkans). Nowadays severely restricted under skin sensitization concerns, it is nevertheless an essential part of chypre fragrances and fougère fragrances.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1087,
+		"name_en" : "Olive Tree",
+		"name_kr" : "",
+		"content_en" : "a fantasy note of a savory woody green fragrance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1088,
+		"name_en" : "Palisander Rosewood",
+		"name_kr" : "",
+		"content_en" : "Redwood or palisander (refers to a number of beautifully nuanced timber) has a soft sweet woody fragrance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1089,
+		"name_en" : "Palo Santo",
+		"name_kr" : "",
+		"content_en" : "a woody note with a fresh citrus touch.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1090,
+		"name_en" : "Palo Verde Tree",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1091,
+		"name_en" : "Pamplewood",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1092,
+		"name_en" : "Paperbark",
+		"name_kr" : "",
+		"content_en" : "Also known as Melaleuca, an indigenous to Australia evergreen tree with bottle-brush flowers, in the myrtle family with fresh smelling, aromatic foliage.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1093,
+		"name_en" : "Papyrus",
+		"name_kr" : "",
+		"content_en" : "a powerful dry aromatic woody scent with smoky and leathery nuances.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1094,
+		"name_en" : "Patchouli",
+		"name_kr" : "",
+		"content_en" : "An exotic bush that grows mainly in India, the leaves of which produce the essential oil of patchouli. Sweet, dark, with an earthy, woody edge, it is very popular in many blends, especially the contemporary woody floral musks. There are also synthetics and fractal extractions.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1095,
+		"name_en" : "Patchouli (Green)",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1096,
+		"name_en" : "Peach Tree",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1097,
+		"name_en" : "Pear Tree",
+		"name_kr" : "",
+		"content_en" : "Fantasy note evoking the tangy-sweet fruity and woody notes of the pear tree.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1098,
+		"name_en" : "Pepperwood or Hercules Club",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1099,
+		"name_en" : "Pine Tree",
+		"name_kr" : "",
+		"content_en" : "Fir absolute has a sweet balsamic, aromatic green, coumarin fragrance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1100,
+		"name_en" : "Pink Ipê Tree",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1101,
+		"name_en" : "Plum Tree",
+		"name_kr" : "",
+		"content_en" : "A woodier, more sturdy note that takes the succulent scent of plum and adds to it.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1102,
+		"name_en" : "Pua Keni Keni (Pua-Lulu)",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1103,
+		"name_en" : "Ravenala",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1104,
+		"name_en" : "Ravensara",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1105,
+		"name_en" : "Red Willow",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1106,
+		"name_en" : "Redwood",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1107,
+		"name_en" : "Rhizoma Atractylodis",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1108,
+		"name_en" : "Saman",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1109,
+		"name_en" : "Sandalwood",
+		"name_kr" : "",
+		"content_en" : "A classic oriental woody note, milky, soft, sturdy, rich, with a green top note and a satisfying lingering scent. The best quality used to be the Mysore sandalwood variety from India, nowadays greatly reduced to the point of extinction from perfumery due to shortage of the natural material (the species is protected from harvesting because it's an endangered species). Australian sandalwood and New Caledonian sandalwood are different species with a harsher odor profile.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1110,
+		"name_en" : "Sassafras",
+		"name_kr" : "",
+		"content_en" : "A spicy sweet fragrance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1111,
+		"name_en" : "Satinwood",
+		"name_kr" : "",
+		"content_en" : "From the species Chloroxylon swietenia, a sweet woody note, referenced in Oriental Lounge by The Different Company.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1112,
+		"name_en" : "Sawdust",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1113,
+		"name_en" : "Scots pine variant",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1114,
+		"name_en" : "Selaginella tamariscina",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1115,
+		"name_en" : "Sequoia",
+		"name_kr" : "",
+		"content_en" : "Inspired by the mighty sequoia trees, a woody note that is gaining increased popularity in fragrances.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1116,
+		"name_en" : "Siam",
+		"name_kr" : "",
+		"content_en" : "From the Siamese cassia tree which bears small yellow blossoms, also known as senna with a particular herbal, bitter aroma.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1117,
+		"name_en" : "Siam Wood",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1118,
+		"name_en" : "Spruce",
+		"name_kr" : "",
+		"content_en" : "A green woody balsamic fragrance with a sweetish undertone.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1119,
+		"name_en" : "Sycamore",
+		"name_kr" : "",
+		"content_en" : "A variation of platanus trees growing in the US, forming the species Platanus occidentalis. A woody note that recalls the nutty, woody, earthy scent of platanus.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1120,
+		"name_en" : "Takamaka",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1121,
+		"name_en" : "Tamboti Wood",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1122,
+		"name_en" : "Tatami",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1123,
+		"name_en" : "Teak Wood",
+		"name_kr" : "",
+		"content_en" : "a fantasy \"blond\" woody note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1124,
+		"name_en" : "Thailand Oud",
+		"name_kr" : "",
+		"content_en" : "a natural oud note: animalic, woody, medicinal, sharp, woody.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1125,
+		"name_en" : "Thanaka Wood",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1126,
+		"name_en" : "Thuja",
+		"name_kr" : "",
+		"content_en" : "Woody note reminiscent of the thuja tree, which belongs in the cypress family. Also known as red cedar or white cedar, though it is not related to cedar botanically.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1127,
+		"name_en" : "Transparent Woods",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1128,
+		"name_en" : "Vetiver",
+		"name_kr" : "",
+		"content_en" : "Vetivers from different parts of the world differ a lot. For example, Haitian vetiver is clean and ethereal, while the Javanese one is smoky and dusty. If we have to generalize the scent, it is earthy, woody, green.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1129,
+		"name_en" : "Vietnamese Oud",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1130,
+		"name_en" : "White Oud",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1131,
+		"name_en" : "White Willow",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1132,
+		"name_en" : "Wood barrel",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1133,
+		"name_en" : "Woody Notes",
+		"name_kr" : "",
+		"content_en" : "Umbrella term used to refer to fragrance notes coming from woody materials (trees mostly, as well as some bushes -such as patchouli- or a few grasses -such as vetiver).",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1134,
+		"name_en" : "Yohimbe",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1135,
+		"name_en" : "Amberwood",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1136,
+		"name_en" : "Andiroba",
+		"name_kr" : "",
+		"content_en" : "Herbal, bitter aroma with a woody background.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1137,
+		"name_en" : "Bakhoor",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1138,
+		"name_en" : "Balsamic Notes",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1139,
+		"name_en" : "Balsamic Vinegar",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1140,
+		"name_en" : "Benzoin",
+		"name_kr" : "",
+		"content_en" : "A warm balsamic note reminiscent of vanilla.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1141,
+		"name_en" : "Birch Tar",
+		"name_kr" : "",
+		"content_en" : "One of the natural materials used for recreating a smell of leather.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1142,
+		"name_en" : "Bisabolene",
+		"name_kr" : "",
+		"content_en" : "Bisabolene has a warm, sweet-spicy-balsamic odour very typical of opoponax and \"oriental\" fragrance types. It finds use in artificial oil of bergamot, myrrh and lemon, and is an excellent fixative for neroli bases.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1143,
+		"name_en" : "Blue Amber",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1144,
+		"name_en" : "Breu-Branco",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1145,
+		"name_en" : "Bushman Candle",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1146,
+		"name_en" : "Cade oil",
+		"name_kr" : "",
+		"content_en" : "The same as juniper tar, obtained by steam distillation of juniper ar crude oil. A tar-like, smoky phenolic fragrance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1147,
+		"name_en" : "Choya Loban",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1148,
+		"name_en" : "Choya Nakh",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1149,
+		"name_en" : "Choya Ral",
+		"name_kr" : "",
+		"content_en" : "The oil is brown in color with a smoky-leathery, dry-woody, sweet resinous fragrance, with a delicate amber undertone.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1150,
+		"name_en" : "Coal Tar",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1151,
+		"name_en" : "Copahu Balm",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1152,
+		"name_en" : "Copaiba Balm",
+		"name_kr" : "",
+		"content_en" : "A soft balsamic, woody and mildly spicy smell.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1153,
+		"name_en" : "Copal",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1154,
+		"name_en" : "Dragon Blood Resin",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1155,
+		"name_en" : "Elemi",
+		"name_kr" : "",
+		"content_en" : "Elemi has a very fresh spicy piney balsamic smell with citrus facet.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1156,
+		"name_en" : "Estoraque",
+		"name_kr" : "",
+		"content_en" : "The Estoraque is an intense herb that exudes freshness and lightness. It is traditionally used in smell baths in the Amazon, by those looking for renewal. It is believed that this ritual attracts good fluids, due to its green and refreshing olfactory characteristic, awakening a sense of energy and vitality.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1157,
+		"name_en" : "Gurjun Balsam",
+		"name_kr" : "",
+		"content_en" : "Fresh woody and spicy.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1158,
+		"name_en" : "Incense",
+		"name_kr" : "",
+		"content_en" : "Olibanum or Frankincense is usually meant by incense in a fragrance pyramid. It could also refer to a smoky note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1159,
+		"name_en" : "Japanese Incense",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1160,
+		"name_en" : "Labdanum",
+		"name_kr" : "",
+		"content_en" : "A deep, powerful, leathery and ambery note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1161,
+		"name_en" : "Mastic or Lentisque",
+		"name_kr" : "",
+		"content_en" : "a fresh balsamic, turpentine-like scent.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1162,
+		"name_en" : "Mopane",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1163,
+		"name_en" : "Myrica",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1164,
+		"name_en" : "Myrrh",
+		"name_kr" : "",
+		"content_en" : "One of the oldest known perfume ingredients, it has a warm balsamic, sweet aromatic spicy fragrance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1165,
+		"name_en" : "Nag Champa",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1166,
+		"name_en" : "Olibanum (Frankincense)",
+		"name_kr" : "",
+		"content_en" : "A fresh balsamic, somewhat green, woody and spicy fragrance with a fruity top note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1167,
+		"name_en" : "Olibanum Sacra Resin Green",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1168,
+		"name_en" : "Opoponax",
+		"name_kr" : "",
+		"content_en" : "An intensely sweet balsamic warm spicy fragrance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1169,
+		"name_en" : "Peru Balsam",
+		"name_kr" : "",
+		"content_en" : "An intense woody coniferous aromatic ambery fragrance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1170,
+		"name_en" : "Pine Tar",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1171,
+		"name_en" : "Poplar (Populus) Buds",
+		"name_kr" : "",
+		"content_en" : "a peculiar balsamic green and bitter-sweet scent.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1172,
+		"name_en" : "Resins",
+		"name_kr" : "",
+		"content_en" : "A general balsamic amber spicy fragrance, which refers to different sources.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1173,
+		"name_en" : "Rubber",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1174,
+		"name_en" : "Styrax",
+		"name_kr" : "",
+		"content_en" : "A dry balsamic note with floral and woody nuances (depending on the method of extraction).",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1175,
+		"name_en" : "Surf Wax",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1176,
+		"name_en" : "Tea Tree Oil",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1177,
+		"name_en" : "Akashic Acord",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1178,
+		"name_en" : "Aldron",
+		"name_kr" : "",
+		"content_en" : "Animalic, woody, amber, tonkin musk",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1179,
+		"name_en" : "Amber",
+		"name_kr" : "",
+		"content_en" : "A sweet, resinous, cozy and warm, often rather powdery note recreated from a mix of balsams, usually labdanum, benzoin, vanilla, styrax and fir or a combination of some of these. A default oriental note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1180,
+		"name_en" : "Amber Xtreme",
+		"name_kr" : "",
+		"content_en" : "Amber, Woody, Dry.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1181,
+		"name_en" : "Ambergris",
+		"name_kr" : "",
+		"content_en" : "A product of the intestines of sperm whales found floating on the ocean and blanched by sea and sun with a skin-like salty and warm effect. Synthetically recreated today.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1182,
+		"name_en" : "Ambertonic™ (IFF)",
+		"name_kr" : "",
+		"content_en" : "deep dry amber-woody scent with sweet, musky, spicy and powdery undertones",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1183,
+		"name_en" : "Ambrarome",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1184,
+		"name_en" : "Ambretone",
+		"name_kr" : "",
+		"content_en" : "Amber-like synthetic to replicate amber, orientalized notes in perfumes",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1185,
+		"name_en" : "Ambrette (Musk Mallow)",
+		"name_kr" : "",
+		"content_en" : "Ambrette seeds oil has a sweet floral musky fragrance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1186,
+		"name_en" : "Ambrettolide",
+		"name_kr" : "",
+		"content_en" : "A musky, amber, slightly fruity scent.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1187,
+		"name_en" : "Ambrocenide (Symrise)",
+		"name_kr" : "",
+		"content_en" : "an extremely powerful and very sharp dry woody scent with ambery, slightly animalic and smokey agarwood tones",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1188,
+		"name_en" : "Ambrostar",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1189,
+		"name_en" : "Ambrostar",
+		"name_kr" : "",
+		"content_en" : "woody amber agarwood\r\nA powerful long-lasting amber, woody (agarwood), odor profile. Highly diffusive.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1190,
+		"name_en" : "Ambroxan",
+		"name_kr" : "",
+		"content_en" : "A modern synthetic compound with a dry amber musky smell.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1191,
+		"name_en" : "Animal Notes",
+		"name_kr" : "",
+		"content_en" : "Different ingredients, synthetic and natural, can produce an animalic dirty and deep sensual effect.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1192,
+		"name_en" : "Bacon",
+		"name_kr" : "",
+		"content_en" : "a synthesized note that recreates the savory, tasty scent of roasted bacon.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1193,
+		"name_en" : "BBQ",
+		"name_kr" : "",
+		"content_en" : "sweet and savory note, synthetic origin, novelty item",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1194,
+		"name_en" : "Beeswax",
+		"name_kr" : "",
+		"content_en" : "A deep aromatic amber fragrance with an intense honey nuance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1195,
+		"name_en" : "Carrot Seeds",
+		"name_kr" : "",
+		"content_en" : "a musky, fluffy, cosmetic note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1196,
+		"name_en" : "Castoreum",
+		"name_kr" : "",
+		"content_en" : "a pungent and strong animal-derived note from the beaver, today synthetically recreated for ethical reasons. Smells leathery and very intense.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1197,
+		"name_en" : "Caviar",
+		"name_kr" : "",
+		"content_en" : "a salty savory note",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1198,
+		"name_en" : "Cetalox",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1199,
+		"name_en" : "Cheese",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1200,
+		"name_en" : "Civet",
+		"name_kr" : "",
+		"content_en" : "Naturally the byproduct of the anal glands of exotic civet cats (technically no cats), which smells very pungent and fecal but which gives an amazing radiance and warmth to florals. Now synthetically replicated with civetone for ethical reasons.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1201,
+		"name_en" : "Civettone",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1202,
+		"name_en" : "Coral Reef",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1203,
+		"name_en" : "Daim",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1204,
+		"name_en" : "Exaltolide®",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1205,
+		"name_en" : "Fur",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1206,
+		"name_en" : "Genet",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1207,
+		"name_en" : "Goat Hair",
+		"name_kr" : "",
+		"content_en" : "natural essence coming from the tinctured hair of a rutting billy goat, used by natural perfumers as an ethically harvested animalic note. Warm and musk-like",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1208,
+		"name_en" : "Goat's Milk",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1209,
+		"name_en" : "Habanolide®",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1210,
+		"name_en" : "Hyraceum",
+		"name_kr" : "",
+		"content_en" : "Essence from the small rodent hyrax's dried up crystalline fecal matter, combining olfactory facets of musk, civet and castoreum. \t\r\n\r\nOdor : animal, warm, phenolic, fecal, urinal",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1211,
+		"name_en" : "Kephalis",
+		"name_kr" : "",
+		"content_en" : "Synthetic note with woody-ambery facets, resembling cedar, that blends well with florals and tobacco, very popular with modern fragrances",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1212,
+		"name_en" : "Kyphi",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1213,
+		"name_en" : "Leather",
+		"name_kr" : "",
+		"content_en" : "Synthetic or naturally derived note of pungent characteristics, reminiscent of cured hides and leather goods. Usually rendered by birch tar or by synth isoquinolines.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1214,
+		"name_en" : "Meat",
+		"name_kr" : "",
+		"content_en" : "novelty note synthetically reproduced replicating the savory scent of cooked meat",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1215,
+		"name_en" : "Milk",
+		"name_kr" : "",
+		"content_en" : "A warm, comfortable gourmand, but not too sweet note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1216,
+		"name_en" : "Musk",
+		"name_kr" : "",
+		"content_en" : "There is a wide variety of sources for musk smelling materials, including synthetic musks and natural ones, mainly obtained from plants, since deer musk is forbidden to obtain and sell. The musk is a secretion inside an internal pouch on the abdomen of the male deer. In order to get it, you have to kill the deer.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1217,
+		"name_en" : "Muskrat",
+		"name_kr" : "",
+		"content_en" : "Musky, animalic.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1218,
+		"name_en" : "Oysters",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1219,
+		"name_en" : "Saffiano Leather",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1220,
+		"name_en" : "Sea Shells",
+		"name_kr" : "",
+		"content_en" : "A natural or synthetic savory note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1221,
+		"name_en" : "Skatole",
+		"name_kr" : "",
+		"content_en" : "As surmised by the name, skatole is foul smelling, smelling filthy and fecal,  but it is very useful when constructing animalic blends or some floral bouquets, such as the note of night blooming storks.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1222,
+		"name_en" : "Skin",
+		"name_kr" : "",
+		"content_en" : "A comfortable warm scent of clean skin – powdery musky.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1223,
+		"name_en" : "Starfish",
+		"name_kr" : "",
+		"content_en" : "A marine note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1224,
+		"name_en" : "Suede",
+		"name_kr" : "",
+		"content_en" : "A synthetic note which replicates the soft, pliable, sensuous feel of suede on the skin. Soft, powdery, musky.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1225,
+		"name_en" : "Sylkolide",
+		"name_kr" : "",
+		"content_en" : "A musk amber synthetic molecule.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1226,
+		"name_en" : "Tolu Balsam",
+		"name_kr" : "",
+		"content_en" : "a sweet amber balsamic fragrance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1227,
+		"name_en" : "Truffle",
+		"name_kr" : "",
+		"content_en" : "a very special gourmand warm and inviting fragrance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1228,
+		"name_en" : "Velvione™",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1229,
+		"name_en" : "Absinthe",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1230,
+		"name_en" : "Advocaat",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1231,
+		"name_en" : "Amaretto",
+		"name_kr" : "",
+		"content_en" : "Fantasy note reminiscent of bitter almond (the actual liqueur is made from apricot pits which have an almondy nuance), usual in gourmand perfumes.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1232,
+		"name_en" : "Applejack",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1233,
+		"name_en" : "Baileys Irish Cream",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1234,
+		"name_en" : "Batida",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1235,
+		"name_en" : "Beer",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1236,
+		"name_en" : "Beer/Ale",
+		"name_kr" : "",
+		"content_en" : "A fantasy savory note of the popular beverage.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1237,
+		"name_en" : "Bellini",
+		"name_kr" : "",
+		"content_en" : "A fantasy note which has a peachy, sparkling effect in perfume compositions. Pairs well with creamy and feminine florals.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1238,
+		"name_en" : "Blue Margarita",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1239,
+		"name_en" : "Boozy Notes",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1240,
+		"name_en" : "Bourbon Whiskey",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1241,
+		"name_en" : "Buttered Rum",
+		"name_kr" : "",
+		"content_en" : "Buttery, intense and giant distilled drink odor.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1242,
+		"name_en" : "Buttermilk",
+		"name_kr" : "",
+		"content_en" : "tangy, creamy",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1243,
+		"name_en" : "Cachaça",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1244,
+		"name_en" : "Caipirinha",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1245,
+		"name_en" : "Calvados Drink",
+		"name_kr" : "",
+		"content_en" : "Calvados is the name of a distilled alcoholic drink, originating in Lower Normandy, France, made from apples, from which cider is extracted, which is then fermented and distilled.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1246,
+		"name_en" : "Campari",
+		"name_kr" : "",
+		"content_en" : "Bitters fantasy note, useful for sparkle and vibrancy",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1247,
+		"name_en" : "Cappuccino",
+		"name_kr" : "",
+		"content_en" : "A smooth, delicious note of coffee and milky lactonic facets, useful in gourmand compositions.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1248,
+		"name_en" : "Champagne",
+		"name_kr" : "",
+		"content_en" : "A sparkling, fizzy note (aldehydes, citrus, fruits, spice).",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1249,
+		"name_en" : "Champagne Rosé",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1250,
+		"name_en" : "Cherry Liqueur",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1251,
+		"name_en" : "Chinotto",
+		"name_kr" : "",
+		"content_en" : "A beverage made from a certain citrus fruit – Citrus myrtifolia.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1252,
+		"name_en" : "Coca-Cola",
+		"name_kr" : "",
+		"content_en" : "A combined effect of the following essences: cinnamon, lime, lemon, orange, coriander, vanilla and nutmeg, much like in the actual soft drink.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1253,
+		"name_en" : "Cocktail Fruits",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1254,
+		"name_en" : "Cognac",
+		"name_kr" : "",
+		"content_en" : "A spicy rich, fruity oaky note wth amber woody undertones.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1255,
+		"name_en" : "Cognac",
+		"name_kr" : "",
+		"content_en" : "a variation on Cognac from Eastern Europe, complex, deep, oaky and with delicious depth",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1256,
+		"name_en" : "Cosmopolitan Cocktail",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1257,
+		"name_en" : "Cream Liqueur",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1258,
+		"name_en" : "Cream Soda",
+		"name_kr" : "",
+		"content_en" : "a vanilla-laced soft drink note which can be sometimes detected in gourmand compositions.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1259,
+		"name_en" : "Curaçao",
+		"name_kr" : "",
+		"content_en" : "Novelty fantasy note with bitter orange facets and a tropical feel. Usually pairs well with other \"beverages\" notes such as coffee or rum.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1260,
+		"name_en" : "Daiquiri",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1261,
+		"name_en" : "Eau de Vie",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1262,
+		"name_en" : "Espresso",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1263,
+		"name_en" : "Espresso Coffee",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1264,
+		"name_en" : "Fruit Tea",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1265,
+		"name_en" : "Génépi",
+		"name_kr" : "",
+		"content_en" : "Aromatic, smooth herbal liqueur.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1266,
+		"name_en" : "Gin",
+		"name_kr" : "",
+		"content_en" : "a classic juniper berry note which appears in gin liquor, bracing, mind-clearing, exhilarating, useful in woody, fougere and chypre compositions to give a piquant start.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1267,
+		"name_en" : "Goldwasser",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1268,
+		"name_en" : "Grenadine",
+		"name_kr" : "",
+		"content_en" : "a fantasy sweet fruity note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1269,
+		"name_en" : "Hi-Fi",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1270,
+		"name_en" : "Ice Wine",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1271,
+		"name_en" : "Jasmine Tea",
+		"name_kr" : "",
+		"content_en" : "a fresh fantasy note",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1272,
+		"name_en" : "Kava Drink",
+		"name_kr" : "",
+		"content_en" : "Kava, the national drink of Fiji. This is the root, so to speak, of why the drink is so beloved. The beverage consists of nothing more than cold water and the ground-up root of the kava plant, piper methstyicum.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1273,
+		"name_en" : "Kir Royal",
+		"name_kr" : "",
+		"content_en" : "A fantasy note of the cocktail Kir Royal – sweet black currant and champagne.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1274,
+		"name_en" : "Lemon Soda",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1275,
+		"name_en" : "Lemonade",
+		"name_kr" : "",
+		"content_en" : "classic tart lemon and fruity sweetness note which is refreshing and almost feels thirst-quenching in fragrances. Contrary to lemon essential oil and lemon rind it has no floral or resinous components.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1276,
+		"name_en" : "Limoncello",
+		"name_kr" : "",
+		"content_en" : "intense lemon, bittersweet fantasy note that is perfect to give a gourmand or modern oriental a tart and succulent opening",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1277,
+		"name_en" : "Liquor",
+		"name_kr" : "",
+		"content_en" : "a general scent of aromatic alcohol.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1278,
+		"name_en" : "Macchiato",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1279,
+		"name_en" : "Madeira",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1280,
+		"name_en" : "Mai Tai Cocktail",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1281,
+		"name_en" : "Margarita",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1282,
+		"name_en" : "Martini",
+		"name_kr" : "",
+		"content_en" : "dry, sophisticated and fun fantasy note reminiscent of the classic cocktail, useful for dry and refreshing fragrance compositions",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1283,
+		"name_en" : "Masala Chai",
+		"name_kr" : "",
+		"content_en" : "A variation of the sweet, spicy tea blend which has soothing, comforting facets to its odor profile. Fantasy note which is featured in Omnia by Bvlgari.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1284,
+		"name_en" : "Mezcal",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1285,
+		"name_en" : "Midori",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1286,
+		"name_en" : "Mocha",
+		"name_kr" : "",
+		"content_en" : "Mocha is a coffee-based drink made with espresso, steamed milk, chocolate and whipped cream.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1287,
+		"name_en" : "Mojito",
+		"name_kr" : "",
+		"content_en" : "a fresh fantasy note reminiscent of mojito (lime, mint).",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1288,
+		"name_en" : "Moonshine",
+		"name_kr" : "",
+		"content_en" : "A fantasy note with the smell of high-proof liquor.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1289,
+		"name_en" : "Moscow Mule",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1290,
+		"name_en" : "Mulled Wine",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1291,
+		"name_en" : "Orange Soda",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1292,
+		"name_en" : "Ouzo",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1293,
+		"name_en" : "Pina Colada",
+		"name_kr" : "",
+		"content_en" : "tropical, sweet note that recalls the famous cocktail, with nuances of creamy coconut and fruity pineapple. Frequent in \"gourmand\" and \"fresh\" compositions.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1294,
+		"name_en" : "Pisco Sour Cocktail",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1295,
+		"name_en" : "Plum Liquor",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1296,
+		"name_en" : "Plum Wine",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1297,
+		"name_en" : "Port Wine",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1298,
+		"name_en" : "Prosecco",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1299,
+		"name_en" : "Punch",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1300,
+		"name_en" : "Raki",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1301,
+		"name_en" : "Red Wine",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1302,
+		"name_en" : "Rhum Agricole",
+		"name_kr" : "",
+		"content_en" : "A fantasy note of sugarcane juice rum",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1303,
+		"name_en" : "Rice Water",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1304,
+		"name_en" : "Rum",
+		"name_kr" : "",
+		"content_en" : "a complex, sweet and aromatic chord that brings on succulence and molasses-tinged nuances to gourmands and woody fragrances.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1305,
+		"name_en" : "Sake",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1306,
+		"name_en" : "Sangria",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1307,
+		"name_en" : "Soy Milk",
+		"name_kr" : "",
+		"content_en" : "Savory milky note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1308,
+		"name_en" : "Sparkling Water",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1309,
+		"name_en" : "Sparkling Wine",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1310,
+		"name_en" : "Syrup",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1311,
+		"name_en" : "Tequila",
+		"name_kr" : "",
+		"content_en" : "fantasy note reminiscent of the drink made from blue agave, a cactus. Salty and bittersweet, used in a variety of tropical or fresgh fragrance blends.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1312,
+		"name_en" : "Tokaji Wine",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1313,
+		"name_en" : "Tonic Water",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1314,
+		"name_en" : "Umeshu",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1315,
+		"name_en" : "Vermouth",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1316,
+		"name_en" : "Vinegar",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1317,
+		"name_en" : "Vodka",
+		"name_kr" : "",
+		"content_en" : "a mild alcoholic note of slight aromatic piquancy.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1318,
+		"name_en" : "Whiskey",
+		"name_kr" : "",
+		"content_en" : "a complex note that comprises facets of sweet hay, oak barrels, chocolate, dried fruits, honey, and mild spices. Sophisticated, warm and deep, usual in orientals, woody fragrances and some chypres.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1319,
+		"name_en" : "White Wine",
+		"name_kr" : "",
+		"content_en" : "a fruity note reminiscent of white wine.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1320,
+		"name_en" : "Wine Lees",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1321,
+		"name_en" : "Wine must",
+		"name_kr" : "",
+		"content_en" : "A fermented grape smell",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1322,
+		"name_en" : "Pepperwood™",
+		"name_kr" : "",
+		"content_en" : "Odor spicy, peppery, freesia, rose, balsamic.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1323,
+		"name_en" : "Accord Eudora®",
+		"name_kr" : "",
+		"content_en" : "Created by perfumer Joachim Correll, it smells like clean, very hydrated skin.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1324,
+		"name_en" : "Alcantara Accord",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1325,
+		"name_en" : "Aldambre",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1326,
+		"name_en" : "Aldehydes",
+		"name_kr" : "",
+		"content_en" : "An abstract soapy, fatty, fresh smell, reminiscent of fresh laundry and frost.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1327,
+		"name_en" : "Aluminum",
+		"name_kr" : "",
+		"content_en" : "An artificial metallic fresh note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1328,
+		"name_en" : "Ambreine",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1329,
+		"name_en" : "Ambrinol",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1330,
+		"name_en" : "Ambrofix™",
+		"name_kr" : "",
+		"content_en" : "Ambrofix™ smell is clearly ambery. It's close to a mixture of Iso e Super and Ambrox DL. Woody and fresh, with a piney and nutty nuance. cedarwood, floral, leather-like, slightly tobacco note, and dry musk-like aftertaste. balsamic amber-like.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1331,
+		"name_en" : "AMBROX® SUPER",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1332,
+		"name_en" : "Ammonia",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1333,
+		"name_en" : "Amyl Salicylate",
+		"name_kr" : "",
+		"content_en" : "a fresh fruity floral green fragrance reminiscent of unripe banana",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1334,
+		"name_en" : "Antillone™",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1335,
+		"name_en" : "Apple Shisha Accord",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1336,
+		"name_en" : "Aqual™",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1337,
+		"name_en" : "Aquozone",
+		"name_kr" : "",
+		"content_en" : "Created by Firmenich, an aquatic marine scent.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1338,
+		"name_en" : "Ash",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1339,
+		"name_en" : "Asphalt",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1340,
+		"name_en" : "Azarbre",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1341,
+		"name_en" : "Black Diamond",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1342,
+		"name_en" : "Black Leather",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1343,
+		"name_en" : "Blood",
+		"name_kr" : "",
+		"content_en" : "A disturbing fresh metallic nuance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1344,
+		"name_en" : "Boisiris",
+		"name_kr" : "",
+		"content_en" : "Boisiris has an elegant powdery woody scent with orris and warm tobacco/amber understones.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1345,
+		"name_en" : "Bourgeonal",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1346,
+		"name_en" : "Brick",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1347,
+		"name_en" : "Brown Scotch Tape",
+		"name_kr" : "",
+		"content_en" : "Fantasy note with a glue and plastic scent used in avant-garde releases, such as Comme des Garcons",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1348,
+		"name_en" : "Burnt Match",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1349,
+		"name_en" : "Calone",
+		"name_kr" : "",
+		"content_en" : "a synthetic note composed to reproduce the light, airy and aqueous feel of watermelon/melon.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1350,
+		"name_en" : "Calypsone",
+		"name_kr" : "",
+		"content_en" : "It is a molecule by Givaudan. It smells ozonic, like sea breeze, with fruity watermelon nuances.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1351,
+		"name_en" : "Camphor",
+		"name_kr" : "",
+		"content_en" : "white crystals that smell like mothballs, this note is used to render a bracing, intensely green and pungent note that cuts through the intense sweetness and decay of some white flowers. Especially infamous in Tubereuse Criminelle by Lutens and Carnal Flower by F.Malle where it balances the tuberose.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1352,
+		"name_en" : "Candle Wax",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1353,
+		"name_en" : "Canvas",
+		"name_kr" : "",
+		"content_en" : "Earthy, moist, soggy, slightly bitter.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1354,
+		"name_en" : "Caoutchouc",
+		"name_kr" : "",
+		"content_en" : "It is a naturally sourced rubber material.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1355,
+		"name_en" : "Cascalone",
+		"name_kr" : "",
+		"content_en" : "A note of fresh water with a fruity hue.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1356,
+		"name_en" : "Cashalox",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1357,
+		"name_en" : "Cashmeran",
+		"name_kr" : "",
+		"content_en" : "A popular synthetic accord with a soft diffusive warm woody musky amber scent, reminiscent of cashmere wool.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1358,
+		"name_en" : "Cetonal®",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1359,
+		"name_en" : "Chalk",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1360,
+		"name_en" : "Cigarette",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1361,
+		"name_en" : "Cinnamaldehyde",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1362,
+		"name_en" : "Clarycet",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1363,
+		"name_en" : "Clay",
+		"name_kr" : "",
+		"content_en" : "A note is reminiscent of terra-cotta tiles and the muddy scent of earth. Often a product of composition rather than a specific synthetic.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1364,
+		"name_en" : "CO2 Extracts",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1365,
+		"name_en" : "Coal",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1366,
+		"name_en" : "Cobblestone",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1367,
+		"name_en" : "Cocaine",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1368,
+		"name_en" : "Concrete",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1369,
+		"name_en" : "Copper",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1370,
+		"name_en" : "Coral Limestone",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1371,
+		"name_en" : "Coranol",
+		"name_kr" : "",
+		"content_en" : "It is a Firmenich molecule with a fresh floral rosy scent with a slight metalic hue.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1372,
+		"name_en" : "Cork",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1373,
+		"name_en" : "Cosmone",
+		"name_kr" : "",
+		"content_en" : "A \"white musk\" scent with pleasantly sweetish, anisic undertones.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1374,
+		"name_en" : "Coumarin",
+		"name_kr" : "",
+		"content_en" : "the odor profile depends on the quantity of the material: it can be herbal like hay, or sweet and warm like caramelized almonds.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1375,
+		"name_en" : "Credit Cards",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1376,
+		"name_en" : "Crustaceans",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1377,
+		"name_en" : "Cuban Cigar",
+		"name_kr" : "",
+		"content_en" : "Tobacco burning, with a greenish and tenacious touch.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1378,
+		"name_en" : "Cyclopidene",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1379,
+		"name_en" : "Damascone",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1380,
+		"name_en" : "Dew Drop",
+		"name_kr" : "",
+		"content_en" : "A fresh natural note of water usually paired with flowers or green notes.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1381,
+		"name_en" : "Dihydromyrcenol",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1382,
+		"name_en" : "Dirt",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1383,
+		"name_en" : "Diving Suit",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1384,
+		"name_en" : "Dodecanal",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1385,
+		"name_en" : "Dust",
+		"name_kr" : "",
+		"content_en" : "Dry, dusty, dense, closed and instigating odor.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1386,
+		"name_en" : "Earth Tincture",
+		"name_kr" : "",
+		"content_en" : "Essence used by perfumers to render a note of dirt, as in gardening or earth dust.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1387,
+		"name_en" : "Earthy Notes",
+		"name_kr" : "",
+		"content_en" : "Earthy notes are sourced from different ingredients: moss, orris root, vetiver, etc.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1388,
+		"name_en" : "Egg",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1389,
+		"name_en" : "Ember",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1390,
+		"name_en" : "Ethyl Maltol",
+		"name_kr" : "",
+		"content_en" : "a warm-fruity caramel sweet jam-like odor with an aspect of cotton candy.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1391,
+		"name_en" : "Eugenol",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1392,
+		"name_en" : "Evernyl",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1393,
+		"name_en" : "Fabric",
+		"name_kr" : "",
+		"content_en" : "A fantasy clean note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1394,
+		"name_en" : "Factor X",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1395,
+		"name_en" : "Fior di Latte",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1396,
+		"name_en" : "Fire",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1397,
+		"name_en" : "Fish",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1398,
+		"name_en" : "Flint",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1399,
+		"name_en" : "Floralozone",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1400,
+		"name_en" : "Flour",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1401,
+		"name_en" : "Galaxolide",
+		"name_kr" : "",
+		"content_en" : "Galaxolide is a synthetic musk with a lightweight clean pleasant somewhat fruity fragrance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1402,
+		"name_en" : "Gasoline",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1403,
+		"name_en" : "Georgywood",
+		"name_kr" : "",
+		"content_en" : "Odor as an intense clean woody odor. Woody-ambery.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1404,
+		"name_en" : "Geosmin",
+		"name_kr" : "",
+		"content_en" : "Synthetic note, originally composed in nature by Streptomyces bacteria among other components such as the Germacradienol synthase enzyme.  It contributes the effect of rained upon earth, very easily detectable and beloved by humans.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1405,
+		"name_en" : "Gold",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1406,
+		"name_en" : "Graphite",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1407,
+		"name_en" : "Guaiacol",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1408,
+		"name_en" : "Gunpowder",
+		"name_kr" : "",
+		"content_en" : "Fantasy note with peppery, sulfurous and pyrocaustic/firecracker facets.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1409,
+		"name_en" : "Hair Pomade",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1410,
+		"name_en" : "Hand Cream",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1411,
+		"name_en" : "Head Space Waterfall",
+		"name_kr" : "",
+		"content_en" : "A note of fresh water obtained by a head space technique.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1412,
+		"name_en" : "Healingwood",
+		"name_kr" : "",
+		"content_en" : "Healingwood has the deep, woody aspect of patchouli, with a much more radiant and vibrant aspect. It’s particularly useful in modern chypre notes, as it imparts this bright aspect which cannot be found in patchouli crude oil. It’s also highly impactful and complex.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1413,
+		"name_en" : "Hedione",
+		"name_kr" : "",
+		"content_en" : "A fresh floral fragrance reminiscent of jasmine with green nuances.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1414,
+		"name_en" : "Helvetolide",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1415,
+		"name_en" : "Hexenyl Green",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1416,
+		"name_en" : "Hexyl Acetate",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1417,
+		"name_en" : "Hina",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1418,
+		"name_en" : "Hindinol",
+		"name_kr" : "",
+		"content_en" : "Sandalwood, woody, milky, creamy, natural.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1419,
+		"name_en" : "Hivernal®",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1420,
+		"name_en" : "Holy Water",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1421,
+		"name_en" : "Hot Iron",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1422,
+		"name_en" : "Ice",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1423,
+		"name_en" : "Indole",
+		"name_kr" : "",
+		"content_en" : "in pure form indole smells like mothballs, camphor green and intense; in white flowers such as jasmine, tuberose and orange blossom it adds a deep animalic, slightly fecal tonality",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1424,
+		"name_en" : "Industrial Glue",
+		"name_kr" : "",
+		"content_en" : "Powerful synthetic feel, meant as a novelty note in modern compositions, notably Comme des Garcon",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1425,
+		"name_en" : "Ink",
+		"name_kr" : "",
+		"content_en" : "A fantasy note that is reminiscent of India ink. Ink notes are also surfacing from natural materials such as oakmoss.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1426,
+		"name_en" : "Instant Film Accord",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1427,
+		"name_en" : "Iodine",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1428,
+		"name_en" : "Ionones",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1429,
+		"name_en" : "Iso E Super",
+		"name_kr" : "",
+		"content_en" : "a synthetic woody cozy ambery musky note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1430,
+		"name_en" : "Isobutyl Quinoline",
+		"name_kr" : "",
+		"content_en" : "A strong leather woody smoky note with sharp earthy nuances of oakmoss.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1431,
+		"name_en" : "Jasmolactone",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1432,
+		"name_en" : "Jasmone",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1433,
+		"name_en" : "Javanol",
+		"name_kr" : "",
+		"content_en" : "A synthetic sandalwood fragrance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1434,
+		"name_en" : "Jeans",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1435,
+		"name_en" : "Lacquered Wood",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1436,
+		"name_en" : "Lactones",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1437,
+		"name_en" : "latex",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1438,
+		"name_en" : "Lava",
+		"name_kr" : "",
+		"content_en" : "A fantasy note of hot fiery lava.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1439,
+		"name_en" : "Lilybelle®",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1440,
+		"name_en" : "Linen",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1441,
+		"name_en" : "Lip Gloss",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1442,
+		"name_en" : "Lipstick",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1443,
+		"name_en" : "Little Doll Strawberry",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1444,
+		"name_en" : "Lorenox",
+		"name_kr" : "",
+		"content_en" : "a complex accord developed by Mane which can be described as woody, ambery, leathery, aromatic.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1445,
+		"name_en" : "Magnolan",
+		"name_kr" : "",
+		"content_en" : "A Symrise molecule with a scent of natural magnolia (hints of citrus, lily of the valley, floral dewy freshness).",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1446,
+		"name_en" : "Mascarpone Cheese",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1447,
+		"name_en" : "Mayonnaise Accord",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1448,
+		"name_en" : "Melonal",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1449,
+		"name_en" : "Metallic Notes",
+		"name_kr" : "",
+		"content_en" : "An artificial fresh fragrance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1450,
+		"name_en" : "Mineral Notes",
+		"name_kr" : "",
+		"content_en" : "an abstract expressly synthetic note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1451,
+		"name_en" : "Mitti Attar",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1452,
+		"name_en" : "Molasses",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1453,
+		"name_en" : "Money",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1454,
+		"name_en" : "Motor Oil",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1455,
+		"name_en" : "Mountain Air",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1456,
+		"name_en" : "Mousse de Saxe",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1457,
+		"name_en" : "Mud",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1458,
+		"name_en" : "Mugane",
+		"name_kr" : "",
+		"content_en" : "A captive floral molecule by MANE.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1459,
+		"name_en" : "Muscenone",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1460,
+		"name_en" : "Mystikal",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1461,
+		"name_en" : "Nail Polish",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1462,
+		"name_en" : "NaturalCalm™",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1463,
+		"name_en" : "Neoprene",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1464,
+		"name_en" : "New Magazine",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1465,
+		"name_en" : "Norlimbanol™",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1466,
+		"name_en" : "Nympheal™",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1467,
+		"name_en" : "Old Books",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1468,
+		"name_en" : "Old House",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1469,
+		"name_en" : "Operanide",
+		"name_kr" : "",
+		"content_en" : "An ambery-woody IFF ingredient with gourmand nuances, creamy, soft and with an amber aroma.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1470,
+		"name_en" : "Orbitone",
+		"name_kr" : "",
+		"content_en" : "Created by Takasago, it is widely used in all types of fragrances, from fresh fruity, floral to woody amber because it is balsamic and creamy. It gives sophisticated body and velvety richness.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1471,
+		"name_en" : "Orcanox™",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1472,
+		"name_en" : "Osmasylk Natsublim™",
+		"name_kr" : "",
+		"content_en" : "Spicy aroma with a touch of clean skin, developed exclusively by AVON.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1473,
+		"name_en" : "Oud Smoke",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1474,
+		"name_en" : "Ozonic Notes",
+		"name_kr" : "",
+		"content_en" : "A fresh fantasy accord.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1475,
+		"name_en" : "Paper",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1476,
+		"name_en" : "Para-Cresyl Phenyl Acetate",
+		"name_kr" : "",
+		"content_en" : "Para-Cresyl Phenyl Acetate is a resemblance to sweet narcotic floral bouquet consisted of rose, narcissus, ylang-ylang, lily, hyacinth, narcissus, tuberose, lily-of-the-valley and so on. It also has  a urine, medicinal, phenolic and honey like scent.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1477,
+		"name_en" : "Paradisone",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1478,
+		"name_en" : "Parchment",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1479,
+		"name_en" : "Pearadise®",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1480,
+		"name_en" : "Pearls",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1481,
+		"name_en" : "Peat",
+		"name_kr" : "",
+		"content_en" : "Dry, bitter, malt-like essence with hint of smokiness used to render novel effects in modern fragrances.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1482,
+		"name_en" : "Pebbles",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1483,
+		"name_en" : "Pencil",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1484,
+		"name_en" : "Petroleum",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1485,
+		"name_en" : "Pharaone®",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1486,
+		"name_en" : "Pink Crystal",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1487,
+		"name_en" : "Pink Himalayan Sea Salt",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1488,
+		"name_en" : "Pizza",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1489,
+		"name_en" : "Plastic",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1490,
+		"name_en" : "Plastic Bag",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1491,
+		"name_en" : "Play-Doh",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1492,
+		"name_en" : "Poison",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1493,
+		"name_en" : "Poivrol",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1494,
+		"name_en" : "Pollen",
+		"name_kr" : "",
+		"content_en" : "A sweet powdery honey-like floral fragrance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1495,
+		"name_en" : "Pomarose",
+		"name_kr" : "",
+		"content_en" : "A Givaudan captive material with a powerful rose fruity smell.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1496,
+		"name_en" : "Porcelain",
+		"name_kr" : "",
+		"content_en" : "Cold odor, slightly reminiscent of damp plaster.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1497,
+		"name_en" : "Powdery Notes",
+		"name_kr" : "",
+		"content_en" : "A vast variety of natural and synthetic notes give a powdery effect to perfume composition. Most usual powder notes are iris/orris, violet, vanilla, rose, musks, heliotrope, opoponax resin, and some amber materials.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1498,
+		"name_en" : "Priest’s Clothes",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1499,
+		"name_en" : "Propolis",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1500,
+		"name_en" : "Prunol",
+		"name_kr" : "",
+		"content_en" : "Synthetic molecule that refers to the odor of a plum with tangy and finally oily aspects.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1501,
+		"name_en" : "Rain Notes",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1502,
+		"name_en" : "RE Base",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1503,
+		"name_en" : "Rhodinol",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1504,
+		"name_en" : "Rice Powder",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1505,
+		"name_en" : "River Notes",
+		"name_kr" : "",
+		"content_en" : "Natural smell of green touches, spicy with earthy nuances and reminiscent of fresh clay.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1506,
+		"name_en" : "Rose Oxide",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1507,
+		"name_en" : "Salicylic Acid",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1508,
+		"name_en" : "Salt",
+		"name_kr" : "",
+		"content_en" : "A savory note that can render interesting a marine, woody or -more intriguingly- a gourmand composition.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1509,
+		"name_en" : "Sand",
+		"name_kr" : "",
+		"content_en" : "A comfortable mineral note.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1510,
+		"name_en" : "Satin",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1511,
+		"name_en" : "Sauna",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1512,
+		"name_en" : "Scent Trek®",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1513,
+		"name_en" : "Sclarene",
+		"name_kr" : "",
+		"content_en" : "Sclarene brings a strong dry woody note with camphor and warm metallic undertones. It can be used in small quantity with musky and ambery notes such as Ambrofix to bring warm and metallic facets. Sclarene is also often considered as a musk booster as it shows interesting musky facets with good substantivity and fixative properties without being musky. Sclarene is commonly used at low dosages below 1% but can be overdosed to bring very unique signature to the fragrance.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1514,
+		"name_en" : "Sea Water",
+		"name_kr" : "",
+		"content_en" : "A fresh salty fragrance of the sea.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1515,
+		"name_en" : "Serenolide",
+		"name_kr" : "",
+		"content_en" : "Skin odor, clean musk.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1516,
+		"name_en" : "Shamama Attar",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1517,
+		"name_en" : "Silk",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1518,
+		"name_en" : "Silver",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1519,
+		"name_en" : "Sinfonide",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1520,
+		"name_en" : "Siren",
+		"name_kr" : "",
+		"content_en" : "Saline, indole and gustatory odor.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1521,
+		"name_en" : "Sisal Rope",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1522,
+		"name_en" : "Slate",
+		"name_kr" : "",
+		"content_en" : "Fantasy note that is dry and modern.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1523,
+		"name_en" : "Smoke",
+		"name_kr" : "",
+		"content_en" : "Different ingredients can produce a smoky effect (birch tar, different incenses).",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1524,
+		"name_en" : "Snow",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1525,
+		"name_en" : "Soap",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1526,
+		"name_en" : "Sodium Silicate",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1527,
+		"name_en" : "Solar Notes",
+		"name_kr" : "",
+		"content_en" : "An uplifting sparkling note of different sources.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1528,
+		"name_en" : "SP3 Carbon",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1529,
+		"name_en" : "Spiranol",
+		"name_kr" : "",
+		"content_en" : "Firmenich molecule Spiranol has camphoreous, woody, green, cooling minty, earthy and tropical scent.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1530,
+		"name_en" : "Spray Paint",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1531,
+		"name_en" : "Steam accord",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1532,
+		"name_en" : "Stone",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1533,
+		"name_en" : "Straw",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1534,
+		"name_en" : "Suederal®",
+		"name_kr" : "",
+		"content_en" : "Leather, Suede, Strong.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1535,
+		"name_en" : "Sulphur",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1536,
+		"name_en" : "Suntan Lotion",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1537,
+		"name_en" : "Sweat",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1538,
+		"name_en" : "T-Shirt accord",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1539,
+		"name_en" : "Talc",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1540,
+		"name_en" : "Tar",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1541,
+		"name_en" : "Tennis Ball",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1542,
+		"name_en" : "Terpineol",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1543,
+		"name_en" : "Terracotta",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1544,
+		"name_en" : "Terranol",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1545,
+		"name_en" : "Timbersilk™",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1546,
+		"name_en" : "Tomato Sauce",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1547,
+		"name_en" : "Tonalide®",
+		"name_kr" : "",
+		"content_en" : "Musky. Berries. Earthy.\r\nIt is one of the most expensive musk.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1548,
+		"name_en" : "Tonquitone™",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1549,
+		"name_en" : "Toothpaste",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1550,
+		"name_en" : "Trimofix®",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1551,
+		"name_en" : "Tuberolide",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1552,
+		"name_en" : "Tulle accord",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1553,
+		"name_en" : "Vanillin",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1554,
+		"name_en" : "Varnish Accord",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1555,
+		"name_en" : "Velvet",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1556,
+		"name_en" : "Verdox",
+		"name_kr" : "",
+		"content_en" : "Created in 1991 by IFF, Verdox ™ is a synthetic raw material which is often used to deliver an apple note to perfumes. The molecule also develops an intense woody facet. Verdox ™ is used in woody, coniferous, fruity-apple and fruity tea notes.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1557,
+		"name_en" : "Vinyl",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1558,
+		"name_en" : "Vinyl Guaiacol",
+		"name_kr" : "",
+		"content_en" : "Provide the smell of vanilla-cloves accord, sweet balsamic and smokey, spicy, powdery carnation accord.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1559,
+		"name_en" : "Vitamin C",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1560,
+		"name_en" : "Water",
+		"name_kr" : "",
+		"content_en" : "There is a number of modern synthetic materials reminiscent of watery flowers, sappy greens, and water itself.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1561,
+		"name_en" : "Western Honey Bee",
+		"name_kr" : "",
+		"content_en" : "Dusty organic odor, with green nuances.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1562,
+		"name_en" : "Wet Plaster",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1563,
+		"name_en" : "Wet Stone",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1564,
+		"name_en" : "White Leather",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1565,
+		"name_en" : "Wool",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1566,
+		"name_en" : "Yeast",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1567,
+		"name_en" : "Hookah",
+		"name_kr" : "",
+		"content_en" : "",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1568,
+		"name_en" : "Sweet Alyssum",
+		"name_kr" : "",
+		"content_en" : "Sweet, airy white floral.",
+		"content_kr" : "",
+		"line_id" : 1
+	},
+	{
+		"id" : 1569,
+		"name_en" : "Umami",
+		"name_kr" : "",
+		"content_en" : "Meaty, brothy savory smell/taste.",
+		"content_kr" : "",
+		"line_id" : 1
+	}
+]
