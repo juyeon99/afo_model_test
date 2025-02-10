@@ -3,7 +3,7 @@ import chromadb
 from chromadb.config import Settings
 from dotenv import load_dotenv
 from chromadb.utils import embedding_functions
-from langchain.vectorstores import Chroma
+from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings.sentence_transformer import SentenceTransformerEmbeddings
 import hashlib, json, torch, os
 from sentence_transformers import SentenceTransformer
@@ -19,17 +19,26 @@ embedding_function = embedding_functions.HuggingFaceEmbeddingFunction(
     model_name="snunlp/KLUE-SRoBERTa-Large-SNUExtended-klueNLI-klueSTS"
 )
 
-# TODO: diffuser_scent.json 향 설명을 가져와 Chroma DB에 임베딩 compute할때 추가하여 저장
+def load_diffuser_scent_data(json_path):
+    """Load diffuser scent descriptions."""
+    try:
+        with open(json_path, "r", encoding="utf-8") as f:
+            return {item["id"]: item["scent_description"] for item in json.load(f)}
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        print(f"Error loading diffuser scent data: {e}")
+        return {}
 
-def initialize_vector_db(perfume_data):
+def initialize_vector_db(perfume_data, diffuser_scent_data):
     """Initialize Chroma DB and store embeddings."""
     collection = chroma_client.get_or_create_collection(name="embeddings", embedding_function=embedding_function)
-    # print("Embedding dimension size:", len(collection.get(include=['embeddings'])['embeddings'][0]))  # 임베딩 dimension 확인
 
     # Insert vectors for each perfume
     for perfume in perfume_data:
-        combined_text = f"{perfume['brand']}\n{perfume['name_kr']} ({perfume['name_en']})\n{perfume['content']}"
-        
+        scent_description = diffuser_scent_data.get(perfume["id"], "")
+        combined_text = f"{perfume['brand']}\n{perfume['name_kr']} ({perfume['name_en']})\n{scent_description}"
+
+        # print("🎀🎀🎀", combined_text)
+
         # Store in Chroma
         collection.add(
             documents=[combined_text],
@@ -37,7 +46,7 @@ def initialize_vector_db(perfume_data):
             ids=[str(perfume["id"])]
         )
 
-    print("Diffuser data has been embedded and stored in Chroma.")
+    print("Perfume and diffuser data have been embedded and stored in Chroma.")
 
     return collection
 
@@ -99,13 +108,16 @@ def load_perfume_data(json_path):
 
 if __name__ == "__main__":
     perfume_data_path = "product.json"
+    diffuser_data_path = "./cache/diffuser_scent.json"
+
     perfume_data = load_perfume_data(perfume_data_path)
-    
+    diffuser_scent_data = load_diffuser_scent_data(diffuser_data_path)
+
     if not perfume_data:
         print("No perfume data available.")
         exit()
-    
-    collection = initialize_vector_db(perfume_data)
+
+    collection = initialize_vector_db(perfume_data, diffuser_scent_data)
 
     query_text = "아쿠아 디 파르마 브랜드의 우디한 향을 가진 디퓨저를 추천해주세요."
     results = collection.query(
