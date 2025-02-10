@@ -1,13 +1,11 @@
+# # Ref: https://cookbook.chromadb.dev/faq/#how-to-set-dimensionality-of-my-collections
 import chromadb
 from chromadb.config import Settings
-from chromadb.utils.embedding_functions import OpenAIEmbeddingFunction
 from dotenv import load_dotenv
 from chromadb.utils import embedding_functions
 from langchain.vectorstores import Chroma
-from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_community.embeddings.sentence_transformer import SentenceTransformerEmbeddings
 import hashlib, json, torch, os
-from langchain.embeddings import SentenceTransformerEmbeddings
 from sentence_transformers import SentenceTransformer
 
 load_dotenv()
@@ -15,45 +13,26 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 
 chroma_client = chromadb.PersistentClient(path="chroma_db")
 
-embedding_model = SentenceTransformer("snunlp/KLUE-SRoBERTa-Large-SNUExtended-klueNLI-klueSTS") # truncate_dim=384
-# embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(model_name="snunlp/KLUE-SRoBERTa-Large-SNUExtended-klueNLI-klueSTS")
-# embedding_function = SentenceTransformerEmbeddings(model_name="snunlp/KLUE-SRoBERTa-Large-SNUExtended-klueNLI-klueSTS")
-# embedding_function = SentenceTransformerEmbeddings(model_name="distiluse-base-multilingual-cased-v2")
-# paraphrase-multilingual-MiniLM-L12-v2
+embedding_model = SentenceTransformer("snunlp/KLUE-SRoBERTa-Large-SNUExtended-klueNLI-klueSTS")
 embedding_function = embedding_functions.HuggingFaceEmbeddingFunction(
     api_key=os.getenv("HUGGINGFACE_API_KEY"),
     model_name="snunlp/KLUE-SRoBERTa-Large-SNUExtended-klueNLI-klueSTS"
 )
 
-# TODO: 향료정보 가져와서 향의 느낌을 GPT에게 설명시킨 후 캐시에 저장.
-#       저장된 향 설명을 가져와 Chroma DB에 임베딩 저장
+# TODO: diffuser_scent.json 향 설명을 가져와 Chroma DB에 임베딩 compute할때 추가하여 저장
 
 def initialize_vector_db(perfume_data):
     """Initialize Chroma DB and store embeddings."""
-    # collection = chroma_client.get_or_create_collection("perfume_embeddings", embedding_function=get_sentence_embedding)
-    # collection = chroma_client.get_or_create_collection("perfume_embeddings", embedding_function=embedding_function)
-    # collection = chroma_client.get_or_create_collection("perfume_embeddings")
     collection = chroma_client.get_or_create_collection(name="embeddings", embedding_function=embedding_function)
-
-    # Use OpenAI for text embeddings
-    # embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
+    # print("Embedding dimension size:", len(collection.get(include=['embeddings'])['embeddings'][0]))  # 임베딩 dimension 확인
 
     # Insert vectors for each perfume
     for perfume in perfume_data:
         combined_text = f"{perfume['brand']}\n{perfume['name_kr']} ({perfume['name_en']})\n{perfume['content']}"
         
-        # Compute the embedding
-        # embeddings = embeddings.embed_query(combined_text)
-        # embeddings = embedding_model.encode([combined_text])
-        # embeddings=get_sentence_embedding([combined_text])
-        
-        embeddings = embedding_model.encode([combined_text])
-        # print("💟💟💟💟💟",embeddings.shape)
-
         # Store in Chroma
         collection.add(
             documents=[combined_text],
-            # embeddings = embeddings,
             metadatas=[{"id": perfume["id"], "name_kr": perfume["name_kr"], "brand": perfume["brand"], "category_id": perfume["category_id"]}],
             ids=[str(perfume["id"])]
         )
