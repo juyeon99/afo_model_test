@@ -1,4 +1,4 @@
 .env
-perfume_db
+chroma_db
 db_metadata_v5
 cache

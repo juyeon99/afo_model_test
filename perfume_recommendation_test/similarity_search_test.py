@@ -2,39 +2,63 @@ import chromadb
 from chromadb.config import Settings
 from chromadb.utils.embedding_functions import OpenAIEmbeddingFunction
 from dotenv import load_dotenv
-import os
+from chromadb.utils import embedding_functions
+from langchain.vectorstores import Chroma
 from langchain_community.embeddings import OpenAIEmbeddings
-import hashlib
-import json
-import torch
+from langchain_community.embeddings.sentence_transformer import SentenceTransformerEmbeddings
+import hashlib, json, torch, os
+from langchain.embeddings import SentenceTransformerEmbeddings
+from sentence_transformers import SentenceTransformer
 
 load_dotenv()
 openai_api_key = os.getenv("OPENAI_API_KEY")
 
-chroma_client = chromadb.PersistentClient(path="perfume_db")
+chroma_client = chromadb.PersistentClient(path="chroma_db")
+
+embedding_model = SentenceTransformer("snunlp/KLUE-SRoBERTa-Large-SNUExtended-klueNLI-klueSTS") # truncate_dim=384
+# embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(model_name="snunlp/KLUE-SRoBERTa-Large-SNUExtended-klueNLI-klueSTS")
+# embedding_function = SentenceTransformerEmbeddings(model_name="snunlp/KLUE-SRoBERTa-Large-SNUExtended-klueNLI-klueSTS")
+# embedding_function = SentenceTransformerEmbeddings(model_name="distiluse-base-multilingual-cased-v2")
+# paraphrase-multilingual-MiniLM-L12-v2
+embedding_function = embedding_functions.HuggingFaceEmbeddingFunction(
+    api_key=os.getenv("HUGGINGFACE_API_KEY"),
+    model_name="snunlp/KLUE-SRoBERTa-Large-SNUExtended-klueNLI-klueSTS"
+)
+
+# TODO: 향료정보 가져와서 향의 느낌을 GPT에게 설명시킨 후 캐시에 저장.
+#       저장된 향 설명을 가져와 Chroma DB에 임베딩 저장
 
 def initialize_vector_db(perfume_data):
     """Initialize Chroma DB and store embeddings."""
-    collection = chroma_client.get_or_create_collection("perfume_embeddings")
+    # collection = chroma_client.get_or_create_collection("perfume_embeddings", embedding_function=get_sentence_embedding)
+    # collection = chroma_client.get_or_create_collection("perfume_embeddings", embedding_function=embedding_function)
+    # collection = chroma_client.get_or_create_collection("perfume_embeddings")
+    collection = chroma_client.get_or_create_collection(name="embeddings", embedding_function=embedding_function)
 
     # Use OpenAI for text embeddings
     # embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
 
     # Insert vectors for each perfume
     for perfume in perfume_data:
-        combined_text = f"{perfume['brand']}\n{perfume['name_kr']} ({perfume['name_en']})\n{perfume['main_accord']}\n{perfume['content']}"
+        combined_text = f"{perfume['brand']}\n{perfume['name_kr']} ({perfume['name_en']})\n{perfume['content']}"
         
         # Compute the embedding
-        # embedding = embeddings.embed_query(combined_text)
+        # embeddings = embeddings.embed_query(combined_text)
+        # embeddings = embedding_model.encode([combined_text])
+        # embeddings=get_sentence_embedding([combined_text])
+        
+        embeddings = embedding_model.encode([combined_text])
+        # print("💟💟💟💟💟",embeddings.shape)
 
         # Store in Chroma
         collection.add(
             documents=[combined_text],
+            # embeddings = embeddings,
             metadatas=[{"id": perfume["id"], "name_kr": perfume["name_kr"], "brand": perfume["brand"], "category_id": perfume["category_id"]}],
             ids=[str(perfume["id"])]
         )
 
-    print("Perfume data has been embedded and stored in Chroma.")
+    print("Diffuser data has been embedded and stored in Chroma.")
 
     return collection
 
@@ -104,71 +128,12 @@ if __name__ == "__main__":
     
     collection = initialize_vector_db(perfume_data)
 
-    query_text = "상쾌한 향, 샤넬 제품을 선호"
+    query_text = "아쿠아 디 파르마 브랜드의 우디한 향을 가진 디퓨저를 추천해주세요."
     results = collection.query(
         query_texts=[query_text],
-        n_results=3,
-        # where={"brand": "크리드"},  # Optional filter
+        n_results=5,
+        # where={"brand": "딥티크"},  # Optional filter
     )
 
     print("Query Results:")
     print(results)
-
-
-
-
-
-# import json
-# import os
-# import chromadb
-
-# # Initialize Chroma Persistent Client
-# client = chromadb.PersistentClient(path="perfume_db")
-# collection = client.get_or_create_collection("perfume_collection")
-
-# # Load perfume data from JSON
-# def load_perfume_data(json_path):
-#     with open(json_path, "r", encoding="utf-8") as f:
-#         return json.load(f)
-
-# perfume_data_path = "product.json"  # Update this to your JSON file path
-# perfume_data = load_perfume_data(perfume_data_path)
-
-# # Prepare documents, metadata, and IDs for ChromaDB
-# documents = []
-# metadatas = []
-# ids = []
-
-# for idx, perfume in enumerate(perfume_data):
-#     # Format the document string as required
-#     document_text = f"{perfume['brand']}\n{perfume['name_kr']} ({perfume['name_en']})\n{perfume['main_accord']}\n{perfume['content']}"
-#     documents.append(document_text)
-    
-#     # Metadata for filtering
-#     metadata = {
-#         "brand": perfume["brand"],
-#         "category_id": perfume["category_id"],
-#         "id": perfume["id"]
-#     }
-#     metadatas.append(metadata)
-    
-#     # Unique ID
-#     ids.append(str(perfume["id"]))
-
-# # Add data to the collection
-# collection.add(
-#     documents=documents,
-#     metadatas=metadatas,
-#     ids=ids,
-# )
-
-# # Query/search for perfumes
-# query_text = "고급진 향"
-# results = collection.query(
-#     query_texts=[query_text],
-#     n_results=3,
-#     where={"brand": "크리드"},  # Optional filter
-# )
-
-# print("Query Results:")
-# print(results)
