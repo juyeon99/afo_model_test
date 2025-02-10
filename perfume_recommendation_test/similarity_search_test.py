@@ -32,12 +32,23 @@ def initialize_vector_db(perfume_data, diffuser_scent_data):
     """Initialize Chroma DB and store embeddings."""
     collection = chroma_client.get_or_create_collection(name="embeddings", embedding_function=embedding_function)
 
-    # Insert vectors for each perfume
+    # Fetch existing IDs from the collection
+    existing_ids = set()
+    try:
+        results = collection.get()
+        existing_ids.update(results["ids"])
+    except Exception as e:
+        print("Error fetching existing IDs:", e)
+
+    # Insert vectors for each perfume if not already in collection
     for perfume in perfume_data:
+        if str(perfume["id"]) in existing_ids:
+            print(f"Skipping perfume ID {perfume['id']} (already in collection).")
+            continue
+
+        print(f"Inserting vectors for ID {perfume['id']}.")
         scent_description = diffuser_scent_data.get(perfume["id"], "")
         combined_text = f"{perfume['brand']}\n{perfume['name_kr']} ({perfume['name_en']})\n{scent_description}"
-
-        # print("🎀🎀🎀", combined_text)
 
         # Store in Chroma
         collection.add(
