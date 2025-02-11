@@ -1,4 +1,4 @@
-# # Ref: https://cookbook.chromadb.dev/faq/#how-to-set-dimensionality-of-my-collections
+# Ref: https://cookbook.chromadb.dev/faq/#how-to-set-dimensionality-of-my-collections
 import chromadb
 from chromadb.config import Settings
 from dotenv import load_dotenv
@@ -7,6 +7,7 @@ from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings.sentence_transformer import SentenceTransformerEmbeddings
 import hashlib, json, torch, os
 from sentence_transformers import SentenceTransformer
+from langchain_openai import ChatOpenAI
 
 load_dotenv()
 openai_api_key = os.getenv("OPENAI_API_KEY")
@@ -117,6 +118,67 @@ def load_perfume_data(json_path):
         print(f"Invalid JSON format in {json_path}.")
         return []
 
+def get_distinct_brands(perfume_data):
+    """Return all distinct diffuser brands from the perfume data."""
+    brands = set()
+    for perfume in perfume_data:
+        brands.add(perfume.get("brand", "Unknown"))
+    return brands
+
+def get_fragrance_recommendation(user_input, caption, existing_brands):
+    brands_str = ", ".join(existing_brands)
+
+    prompt = f"""
+You are a fragrance expert with in-depth knowledge of various diffuser scents and brands. Based on the User Input and Image Caption, provide a fragrance description that matches the room's description and the user's request.
+
+### Instructions:
+- **Existing Brands**: {brands_str}
+1. **If a specific brand is mentioned**, check if it exists in the list of existing brands above. If it does, start the description with that brand's name and recommend a fragrance that fits the user's request. **IF THE BRAND IS MENTIONED IN THE USER INPUT BUT IS NOT FOUND IN THE EXISTING BRANDS LIST, START BY 'Not Found' TO SAY THE BRAND DOES NOT EXIST.**
+2. **If the brand is misspelled or doesn't exist**, please:
+    - Correct the spelling if the brand is close to an existing brand (e.g., "아쿠아 파르마" -> "아쿠아 디 파르마").
+    - **IF THE BRAND IS MENTIONED IN THE USER INPUT BUT IS NOT FOUND IN THE EXISTING BRANDS LIST, START BY 'Not Found' TO SAY THE BRAND DOES NOT EXIST.** Then, recommend a suitable fragrance based on the context and preferences described in the user input.
+3. Provide the fragrance description in **Korean**, including key scent notes and any relevant details that would make the fragrance fitting for the user's request. Ensure the description aligns with the mood and characteristics described in the user input and image caption.
+
+### Example Responses:
+
+#### Example 1 (when a brand is mentioned, but with a minor spelling error):
+- User Input: 아쿠아 파르마의 우디한 베이스를 가진 디퓨저를 추천해줘.
+- Image Caption: The image shows a modern living room with a large window on the right side. The room has white walls and wooden flooring. On the left side of the room, there is a gray sofa and a white coffee table with a black and white patterned rug in front of it. In the center of the image, there are six black chairs arranged around a wooden dining table. The table is set with a vase and other decorative objects on it. Above the table, two large windows let in natural light and provide a view of the city outside. A white floor lamp is placed on the floor next to the sofa.
+- Response: 
+  - Brand: 아쿠아 디 파르마
+  - Scent Description: 우디한 느낌을 강조하는 세련되고 따뜻한 향. 샌들우드, 시더우드, 오크모스의 풍부하고 자연적인 노트가 섬세하게 어우러져 차분하고 안정된 분위기를 만들어냅니다. 신선한 소나무와 가벼운 유칼립투스의 향이 상쾌함을 더해, 깊고 고요한 우디 향과 균형을 이루며 공간에 생기를 불어넣습니다. 이 향은 자연의 우아함을 그대로 담아내며, 평온하고 초대하는 느낌의 분위기를 완성합니다.
+
+#### Example 2 (when no brand is mentioned):
+- User Input: 우디한 베이스를 가진 디퓨저를 추천해줘.
+- Image Caption: The image shows a modern living room with a large window on the right side. The room has white walls and wooden flooring. On the left side of the room, there is a gray sofa and a white coffee table with a black and white patterned rug in front of it. In the center of the image, there are six black chairs arranged around a wooden dining table. The table is set with a vase and other decorative objects on it. Above the table, two large windows let in natural light and provide a view of the city outside. A white floor lamp is placed on the floor next to the sofa.
+- Response: 
+  - Brand: None
+  - Scent Description: 우디한 느낌을 강조하는 세련되고 따뜻한 향. 샌들우드, 시더우드, 오크모스의 풍부하고 자연적인 노트가 섬세하게 어우러져 차분하고 안정된 분위기를 만들어냅니다. 신선한 소나무와 가벼운 유칼립투스의 향이 상쾌함을 더해, 깊고 고요한 우디 향과 균형을 이루며 공간에 생기를 불어넣습니다. 이 향은 자연의 우아함을 그대로 담아내며, 평온하고 초대하는 느낌의 분위기를 완성합니다.
+
+#### Example 3 (when a brand is mentioned but not in the list of existing brands):
+- User Input: 샤넬 브랜드 제품의 우디한 베이스를 가진 디퓨저를 추천해줘.
+- Image Caption: The image shows a modern living room with a large window on the right side. The room has white walls and wooden flooring. On the left side of the room, there is a gray sofa and a white coffee table with a black and white patterned rug in front of it. In the center of the image, there are six black chairs arranged around a wooden dining table. The table is set with a vase and other decorative objects on it. Above the table, two large windows let in natural light and provide a view of the city outside. A white floor lamp is placed on the floor next to the sofa.
+- Response:
+  - Brand: Not Found
+  - Scent Description: 우디한 느낌을 강조하는 세련되고 따뜻한 향. 샌들우드, 시더우드, 오크모스의 풍부하고 자연적인 노트가 섬세하게 어우러져 차분하고 안정된 분위기를 만들어냅니다. 신선한 소나무와 가벼운 유칼립투스의 향이 상쾌함을 더해, 깊고 고요한 우디 향과 균형을 이루며 공간에 생기를 불어넣습니다. 이 향은 자연의 우아함을 그대로 담아내며, 평온하고 초대하는 느낌의 분위기를 완성합니다.
+
+- **User Input**: {user_input}
+- **Image Caption**: {caption}
+Response:"""
+    
+    api_key = os.getenv("OPENAI_API_KEY")
+    api_base = os.getenv("OPENAI_HOST")
+
+    gpt_client = ChatOpenAI(
+        model="gpt-4o-mini",
+        temperature=0.7,
+        openai_api_key=api_key,
+        openai_api_base=api_base
+    )
+    fragrance_description = gpt_client.invoke(prompt).content.strip()
+
+    return fragrance_description
+
 if __name__ == "__main__":
     perfume_data_path = "product.json"
     diffuser_data_path = "./cache/diffuser_scent.json"
@@ -124,13 +186,23 @@ if __name__ == "__main__":
     perfume_data = load_perfume_data(perfume_data_path)
     diffuser_scent_data = load_diffuser_scent_data(diffuser_data_path)
 
+    brands = get_distinct_brands(perfume_data)
+
     if not perfume_data:
         print("No perfume data available.")
         exit()
 
     collection = initialize_vector_db(perfume_data, diffuser_scent_data)
 
-    query_text = "아쿠아 디 파르마 브랜드의 우디한 향을 가진 디퓨저를 추천해주세요."
+    user_input = "딥디크의 우디한 향을 가진 디퓨저를 추천해주세요."
+    caption = "The image shows a modern living room with a large window on the right side. The room has white walls and wooden flooring. On the left side of the room, there is a gray sofa and a white coffee table with a black and white patterned rug in front of it. In the center of the image, there are six black chairs arranged around a wooden dining table. The table is set with a vase and other decorative objects on it. Above the table, two large windows let in natural light and provide a view of the city outside. A white floor lamp is placed on the floor next to the sofa."
+    
+    # query_text 업데이트 => GPT에게 user input과 caption 전달 후 어울리는 향에 대한 설명 한국어로 반환(특정 브랜드 있으면 맨 앞에 적게끔 요청.)
+    fragrance_description = get_fragrance_recommendation(user_input, caption, brands)
+    print(f"🎀 Generated Fragrance Description: {fragrance_description}")
+    
+    query_text = fragrance_description
+
     results = collection.query(
         query_texts=[query_text],
         n_results=5,

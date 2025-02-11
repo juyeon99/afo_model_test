@@ -18,6 +18,12 @@ SPICE_CACHE_PATH = os.path.join(CACHE_DIR, "spice_cache.json")
 PRODUCT_CACHE_PATH = os.path.join(CACHE_DIR, "product_cache.json")
 DIFFUSER_SCENT_PATH = os.path.join(CACHE_DIR, "diffuser_scent.json")
 
+def get_product_details(product_id, products):
+    for product in products:
+        if product["id"] == product_id:
+            return product
+    return None
+
 # Load cache data
 def load_cache(file_path):
     if os.path.exists(file_path):
@@ -59,17 +65,21 @@ def format_notes(note_data):
                 formatted.append(f"{note_type.lower()}: {notes_str}")
         return "\n".join(formatted)
 
-def generate_scent_description(notes_text):
+def generate_scent_description(notes_text, diffuser_description):
     prompt = f"""Based on the following fragrance combination of the diffuser, describe the characteristics of the overall scent using common perfumery terms such as 우디, 플로럴, 스파이시, 시트러스, 허브, 머스크, 아쿠아, 그린, 구르망, etc. You do not need to break down each note, just focus on the overall scent impression.
         # EXAMPLE 1:
-        - Input: Top: 이탈리안 레몬 잎, 로즈마리\nMiddle: 자스민, 라반딘\nBase: 시더우드, 머스크
-        - Output: 상쾌한 시트러스와 허브의 조화, 플로럴한 우아함, 따뜻한 우디한 향과 부드러운 머스크가 어우러져 균형 잡힌 향기를 만들어냅니다. 전체적으로 이 향은 활력을 주면서도 동시에 편안함과 안정감을 느낄 수 있는, 다채롭고 매력적인 향입니다.
+        - Note: Top: 이탈리안 레몬 잎, 로즈마리\nMiddle: 자스민, 라반딘\nBase: 시더우드, 머스크
+        - Diffuser Description: 당신의 여정에 감각적이고 신선한 향기가 퍼집니다. 아침 햇살이 창문을 통해 들어올 때, 산들 바람과 함께 이탈리아 시골을 연상시키는 푸른 향기
+        - Response: 상쾌한 시트러스와 허브의 조화, 플로럴한 우아함, 따뜻한 우디한 향과 부드러운 머스크가 어우러져 균형 잡힌 향기를 만들어냅니다. 전체적으로 이 향은 활력을 주면서도 동시에 편안함과 안정감을 느낄 수 있는, 다채롭고 매력적인 향입니다.
 
         # EXAMPLE 2:
-        - Input: single: 이탈리안 베르가못, 이탈리안 레몬, 자몽, 무화과, 핑크 페퍼, 자스민 꽃잎, 무화과 나무, 시더우드, 벤조인
-        - Output: 이 향은 상쾌하고 활기찬 느낌을 주면서도, 부드럽고 따뜻한 깊이를 지닌 균형 잡힌 향입니다. 밝고 톡톡 튀는 시트러스 향이 기분을 상쾌하게 해주고, 달콤하고 우아한 플로럴과 자연적인 우디한 느낌이 조화를 이루며 세련된 분위기를 만들어냅니다. 전체적으로 신선하고 세련되며, 따뜻하면서도 편안한 느낌을 주는 복합적인 향입니다.
+        - Note: single: 이탈리안 베르가못, 이탈리안 레몬, 자몽, 무화과, 핑크 페퍼, 자스민 꽃잎, 무화과 나무, 시더우드, 벤조인
+        - Diffuser Description: 당신의 여정에 감각적이고 신선한 향기가 퍼집니다. 아침 햇살이 창문을 통해 들어올 때, 산들 바람과 함께 이탈리아 시골을 연상시키는 푸른 향기
+        - Response: 이 향은 상쾌하고 활기찬 느낌을 주면서도, 부드럽고 따뜻한 깊이를 지닌 균형 잡힌 향입니다. 밝고 톡톡 튀는 시트러스 향이 기분을 상쾌하게 해주고, 달콤하고 우아한 플로럴과 자연적인 우디한 느낌이 조화를 이루며 세련된 분위기를 만들어냅니다. 전체적으로 신선하고 세련되며, 따뜻하면서도 편안한 느낌을 주는 복합적인 향입니다.
 
-        # INPUT: {notes_text}"""
+        # Note: {notes_text}
+        # Diffuser Description: {diffuser_description}
+        # Response: """
     
     print("💟",notes_text)
     
@@ -120,7 +130,12 @@ for product_id, note_data in product_notes.items():
     formatted_notes = format_notes(note_data)
     print(f"Generating scent description for product {product_id}...")
 
-    scent_description = generate_scent_description(formatted_notes)
+    product_details = get_product_details(product_id, products)
+    if product_details:
+        # Diffuser description is fetched from product details or assigned manually
+        diffuser_description = product_details.get("content", "")
+
+    scent_description = generate_scent_description(formatted_notes, diffuser_description)
     scent_cache[str(product_id)] = scent_description
 
     print(f"Scent description for product {product_id}: {scent_description}")

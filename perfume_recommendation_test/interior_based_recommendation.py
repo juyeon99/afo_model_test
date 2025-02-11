@@ -184,9 +184,9 @@ if __name__ == "__main__":
         exit()
 
     # 이미지 분석
-    # image_path = "test_space.jpg"
-    # caption = analyze_image(image_path)
-    caption = "The image shows a modern living room with a large window on the right side. The room has white walls and wooden flooring. On the left side of the room, there is a gray sofa and a white coffee table with a black and white patterned rug in front of it. In the center of the image, there are six black chairs arranged around a wooden dining table. The table is set with a vase and other decorative objects on it. Above the table, two large windows let in natural light and provide a view of the city outside. A white floor lamp is placed on the floor next to the sofa."
+    image_path = "test_space.jpg"
+    caption = analyze_image(image_path)
+    # caption = "The image shows a modern living room with a large window on the right side. The room has white walls and wooden flooring. On the left side of the room, there is a gray sofa and a white coffee table with a black and white patterned rug in front of it. In the center of the image, there are six black chairs arranged around a wooden dining table. The table is set with a vase and other decorative objects on it. Above the table, two large windows let in natural light and provide a view of the city outside. A white floor lamp is placed on the floor next to the sofa."
     user_message = "크리드 브랜드의 향수를 추천해주세요."
 
     if caption:
