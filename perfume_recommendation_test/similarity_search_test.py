@@ -6,7 +6,6 @@ from chromadb.utils import embedding_functions
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings.sentence_transformer import SentenceTransformerEmbeddings
 import hashlib, json, os
-from sentence_transformers import SentenceTransformer
 from langchain_openai import ChatOpenAI
 
 load_dotenv()
@@ -24,11 +23,6 @@ chroma_client = chromadb.PersistentClient(path="chroma_db")
 
 # Ref: https://github.com/chroma-core/chroma/blob/main/chromadb/utils/embedding_functions/sentence_transformer_embedding_function.py
 embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(model_name="snunlp/KLUE-SRoBERTa-Large-SNUExtended-klueNLI-klueSTS")
-# embedding_model = SentenceTransformer("snunlp/KLUE-SRoBERTa-Large-SNUExtended-klueNLI-klueSTS")
-# embedding_function = embedding_functions.HuggingFaceEmbeddingFunction(
-#     api_key=os.getenv("HUGGINGFACE_API_KEY"),
-#     model_name="snunlp/KLUE-SRoBERTa-Large-SNUExtended-klueNLI-klueSTS"
-# )
 
 def load_diffuser_scent_data(json_path):
     """Load diffuser scent descriptions."""
@@ -39,7 +33,7 @@ def load_diffuser_scent_data(json_path):
         logger.error(f"Error loading diffuser scent data: {e}")
         return {}
 
-def initialize_vector_db(perfume_data, diffuser_scent_data):
+def initialize_vector_db(product_data, diffuser_scent_data):
     """Initialize Chroma DB and store embeddings."""
     collection = chroma_client.get_or_create_collection(name="embeddings", embedding_function=embedding_function)
 
@@ -51,25 +45,25 @@ def initialize_vector_db(perfume_data, diffuser_scent_data):
     except Exception as e:
         logger.error(f"Error fetching existing IDs: {e}")
 
-    # Insert vectors for each perfume if not already in collection
-    for perfume in perfume_data:
-        if str(perfume["id"]) in existing_ids:
-            # logger.info(f"Skipping perfume ID {perfume['id']} (already in collection).")
+    # Insert vectors for each product if not already in collection
+    for product in product_data:
+        if str(product["id"]) in existing_ids:
+            # logger.info(f"Skipping product ID {product['id']} (already in collection).")
             continue
         
-        logger.info(f"Inserting vectors for ID {perfume['id']}.")
-        scent_description = diffuser_scent_data.get(perfume["id"], "")
-        combined_text = f"{perfume['brand']}\n{perfume['name_kr']} ({perfume['name_en']})\n{scent_description}"
+        logger.info(f"Inserting vectors for ID {product['id']}.")
+        scent_description = diffuser_scent_data.get(product["id"], "")
+        combined_text = f"{product['brand']}\n{product['name_kr']} ({product['name_en']})\n{scent_description}"
         # embeddings = embedding_model.encode([combined_text])
 
         # Store in Chroma
         collection.add(
             documents=[combined_text],
             # embeddings=embeddings,
-            metadatas=[{"id": perfume["id"], "name_kr": perfume["name_kr"], "brand": perfume["brand"], "category_id": perfume["category_id"]}],
-            ids=[str(perfume["id"])]
+            metadatas=[{"id": product["id"], "name_kr": product["name_kr"], "brand": product["brand"], "category_id": product["category_id"]}],
+            ids=[str(product["id"])]
         )
-    logger.info(f"Perfume and diffuser data have been embedded and stored in Chroma.")
+    logger.info(f"Diffuser data have been embedded and stored in Chroma.")
 
     return collection
 
@@ -88,8 +82,8 @@ def compute_file_hash(file_path):
     except FileNotFoundError:
         return None
 
-def load_perfume_data(json_path):
-    """Load perfume data with caching support."""
+def load_product_data(json_path):
+    """Load product data with caching support."""
     if not os.path.exists(CACHE_DIR):
         os.makedirs(CACHE_DIR)
 
@@ -129,27 +123,27 @@ def load_perfume_data(json_path):
         logger.warning(f"Invalid JSON format in {json_path}.")
         return []
 
-def get_distinct_brands(perfume_data):
-    """Return all distinct diffuser brands from the perfume data."""
+def get_distinct_brands(product_data):
+    """Return all distinct diffuser brands from the product data."""
     brands = set()
-    for perfume in perfume_data:
-        brands.add(perfume.get("brand", "Unknown"))
+    for product in product_data:
+        brands.add(product.get("brand", "Unknown"))
     return brands
 
 def get_fragrance_recommendation(user_input, caption, existing_brands):
     # GPT에게 user input과 caption 전달 후 어울리는 향에 대한 설명 한국어로 반환(특정 브랜드 있으면 맨 앞에 적게끔 요청.)
     brands_str = ", ".join(existing_brands)
 
-    prompt = f"""You are a fragrance expert with in-depth knowledge of various scents. Based on the User Input and Image Caption, **imagine** and provide a fragrance scent description that matches the room's description and the user's request. Focus more on the User Input. Your task is to creatively describe a fragrance that would fit well with the mood and characteristics of the room as described in the caption, as well as the user's scent preference. Do not mention specific diffuser or perfume products.
+    prompt = f"""You are a fragrance expert with in-depth knowledge of various scents. Based on the User Input and Image Caption, **imagine** and provide a fragrance scent description that matches the room's description and the user's request. Focus more on the User Input. Your task is to creatively describe a fragrance that would fit well with the mood and characteristics of the room as described in the caption, as well as the user's scent preference. Do not mention specific diffuser or product products.
 
 ### Instructions:
-- **Existing Brands**: {brands_str}
+- Existing Brands: {brands_str}
 1. **If a specific brand is mentioned**, check if it exists in the list of existing brands above. If it does, acknowledge the brand name without referring to any specific product and describe a fitting scent that aligns with the user's request.  
 **IF THE BRAND IS MENTIONED IN THE USER INPUT BUT IS NOT FOUND IN THE EXISTING BRANDS LIST, START BY 'Not Found' TO SAY THE BRAND DOES NOT EXIST.**
 2. **If the brand is misspelled or doesn't exist**, please:
     - Correct the spelling if the brand is close to an existing brand (e.g., "아쿠아 파르마" -> "아쿠아 디 파르마").
     - **IF THE BRAND IS MENTIONED IN THE USER INPUT BUT IS NOT FOUND IN THE EXISTING BRANDS LIST, START BY 'Not Found' TO SAY THE BRAND DOES NOT EXIST.** Then, recommend a suitable fragrance based on the context and preferences described in the user input.
-3. Provide the fragrance description in **Korean**, focusing on key scent notes and creative details that align with the mood and characteristics described in the user input and image caption. Do **not mention specific diffuser or perfume products.**
+3. Provide the fragrance description in **Korean**, focusing on key scent notes and creative details that align with the mood and characteristics described in the user input and image caption. Do **not mention specific diffuser or product products.**
 
 ### Example Responses:
 
@@ -175,7 +169,7 @@ def get_fragrance_recommendation(user_input, caption, existing_brands):
   - Scent Description: 우디한 베이스에 따뜻하고 자연스러운 분위기를 더하는 향이 어울립니다. 은은한 샌들우드와 부드러운 시더우드가 조화를 이루며, 가벼운 머스크와 드라이한 베티버가 깊이를 더합니다. 가벼운 허브와 상쾌한 시트러스 노트가 은은하게 균형을 이루며 여유롭고 세련된 분위기를 연출합니다.
 
 - User Input: {user_input}
-- Image Caption**: {caption}
+- Image Caption: {caption}
 Response:"""
     
     api_key = os.getenv("OPENAI_API_KEY")
@@ -192,19 +186,19 @@ Response:"""
     return fragrance_description
 
 if __name__ == "__main__":
-    perfume_data_path = "product.json"
+    product_data_path = "product.json"
     diffuser_data_path = "./cache/diffuser_scent.json"
 
-    perfume_data = load_perfume_data(perfume_data_path)
+    product_data = load_product_data(product_data_path)
     diffuser_scent_data = load_diffuser_scent_data(diffuser_data_path)
 
-    brands = get_distinct_brands(perfume_data)
+    brands = get_distinct_brands(product_data)
 
-    if not perfume_data:
-        logger.info(f"No perfume data available.")
+    if not product_data:
+        logger.info(f"No product data available.")
         exit()
 
-    collection = initialize_vector_db(perfume_data, diffuser_scent_data)
+    collection = initialize_vector_db(product_data, diffuser_scent_data)
 
     # user_input = "아쿠아파르마 디퓨저 중 우디한 향을 가진 디퓨저를 추천해주세요."
     # caption = "The image shows a modern living room with a large window on the right side. The room has white walls and wooden flooring. On the left side of the room, there is a gray sofa and a white coffee table with a black and white patterned rug in front of it. In the center of the image, there are six black chairs arranged around a wooden dining table. The table is set with a vase and other decorative objects on it. Above the table, two large windows let in natural light and provide a view of the city outside. A white floor lamp is placed on the floor next to the sofa."
