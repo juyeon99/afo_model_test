@@ -2,8 +2,8 @@ import os
 import sys
 import urllib.request
 
-client_id = "j6V0FxlVsi4RBYMy6HOI"
-client_secret = "ji9oyvWZ1e"
+client_id = "your_client_id"
+client_secret = "your_client_secret_key"
 
 encText = urllib.parse.quote("오드 우드 오 드 퍼퓸 50ml")
 url = "https://openapi.naver.com/v1/search/shop?query=" + encText # JSON 결과
