@@ -116,6 +116,9 @@ async def cypher_query_execute_node(
                     async_neo4j_db.execute_generate_query(full_query, **query_params),
                     timeout=20.0
                 )
+
+                # Section 결과에 상위 TOC 요약/텍스트를 주입하여 Evidence 스코어링 시 함께 참조
+                result = await _attach_toc_summaries(result)
                 
                 if not result:
                     logger.info(f"쿼리 {index+1} 실행 결과가 비어있습니다")
@@ -186,9 +189,6 @@ async def cypher_query_execute_node(
             all_results.extend(candidates)
             execution_details.append(detail)
             total_result_count += len(candidates)
-
-        # ankle 컨텍스트 섹션 전역 중복 제거
-        all_results = _dedupe_ankle_context_sections(all_results)
         
         # 실행 결과 요약
         successful_queries = sum(1 for detail in execution_details if detail["success"])
@@ -233,6 +233,74 @@ async def cypher_query_execute_node(
         }
 
 
+async def _attach_toc_summaries(records: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    Section 결과에 연결된 TOC의 요약/본문/제목을 주입한다.
+    - section_id가 결과 어디에 있든 재귀적으로 수집
+    - TOC 정보를 조회해 동일한 dict 레벨에 toc_* 필드를 채워 넣음
+    """
+    section_ids: set[str] = set()
+
+    def collect_section_ids(obj: Any):
+        if isinstance(obj, dict):
+            if "section_id" in obj and isinstance(obj["section_id"], str):
+                section_ids.add(obj["section_id"])
+            for v in obj.values():
+                collect_section_ids(v)
+        elif isinstance(obj, list):
+            for v in obj:
+                collect_section_ids(v)
+
+    collect_section_ids(records)
+
+    if not section_ids:
+        return records
+
+    query = """
+    MATCH (toc:TOC)-[:HAS_SECTION]->(s:Section)
+    WHERE s.section_id IN $section_ids
+    RETURN s.section_id AS section_id,
+           toc.toc_summary AS toc_summary,
+           toc.core_text AS toc_core_text
+    """
+
+    try:
+        toc_rows = await async_neo4j_db.execute_query_with_retry(
+            query,
+            {"section_ids": list(section_ids)},
+            result_type="list",
+        )
+    except Exception as e:
+        logger.warning(f"TOC 요약 조회 실패 - 섹션 {len(section_ids)}개: {e}")
+        return records
+
+    toc_map = {
+        row.get("section_id"): {
+            "toc_summary": row.get("toc_summary"),
+            "toc_core_text": row.get("toc_core_text"),
+        }
+        for row in toc_rows or []
+        if row.get("section_id")
+    }
+
+    def inject(obj: Any):
+        if isinstance(obj, dict):
+            sec_id = obj.get("section_id")
+            if isinstance(sec_id, str) and sec_id in toc_map:
+                toc_info = toc_map[sec_id]
+                for k, v in toc_info.items():
+                    if v and k not in obj:
+                        obj[k] = v
+            for v in obj.values():
+                inject(v)
+        elif isinstance(obj, list):
+            for v in obj:
+                inject(v)
+
+    inject(records)
+    return records
+
+
 def _convert_to_records(result: List[Dict[str, Any]], cypher_query: Optional[str] = None) -> List[Candidate]:
     """
     Neo4j 쿼리 결과를 Candidate 형태로 변환
@@ -254,26 +322,11 @@ def _convert_to_records(result: List[Dict[str, Any]], cypher_query: Optional[str
         # source_id와 이미지 추출 (기존 방식 유지)
         _parse_dict(item, source_ids=source, image_list=image_list)
         
-        # 핵심 정보만 추출하여 content 구성
-        content = _extract_essential_content(item)
+        # TOC 필드를 분리 추출 (content에는 포함하지 않음)
+        toc_info = _extract_toc_fields(item)
 
-        # ankle 섹션 결과라면 우선순위 플래그와 태그 추가
-        is_ankle_root = bool(
-            item.get("ankle_section_id")
-            or (isinstance(item.get("ankle_section"), dict) and item.get("ankle_section", {}).get("section_id"))
-        )
-        if is_ankle_root:
-            item = dict(item)
-            item["is_ankle_root"] = True
-            item["priority"] = "ankle"
-            # ankle 자체 컨텍스트에도 priority 표시
-            contexts = item.get("context_sections")
-            if isinstance(contexts, list):
-                for ctx in contexts:
-                    if isinstance(ctx, dict) and ctx.get("is_ankle"):
-                        ctx["priority"] = "ankle"
-            if content:
-                content = f"[ANKLE] {content}"
+        # 핵심 정보만 추출하여 content 구성 (TOC는 별도 필드로)
+        content = _extract_essential_content(item, include_toc=False)
         
         # content가 비어있으면 기존 방식으로 폴백
         if not content.strip():
@@ -286,94 +339,13 @@ def _convert_to_records(result: List[Dict[str, Any]], cypher_query: Optional[str
             image_base64=image_list,
             is_image=len(image_list) > 0,
             cypher_query=cypher_query,
+            toc_title=toc_info.get("toc_title"),
+            toc_summary=toc_info.get("toc_summary"),
+            toc_core_text=toc_info.get("toc_core_text"),
         )
         candidate_group.append(candidate)
     return candidate_group
 
-
-def _dedupe_ankle_context_sections(candidates: List[Candidate]) -> List[Candidate]:
-    """
-    ankle 섹션별 반환 결과에서 context_sections를 전역 중복 제거.
-    - 동일 섹션이 여러 ankle에 포함되면 첫 번째만 유지(ankle 본인은 항상 유지)
-    - 어떤 ankle들이 해당 섹션을 참조했는지 ankle_section_refs에 기록
-    """
-    if not candidates:
-        return candidates
-
-    global_seen_ids: set[str] = set()
-    merged_map: Dict[str, Dict[str, Any]] = {}
-
-    for cand in candidates:
-        res = getattr(cand, "result", None)
-        if not isinstance(res, dict):
-            continue
-
-        contexts = res.get("context_sections")
-        if not isinstance(contexts, list):
-            continue
-
-        ankle_id = res.get("ankle_section_id") or res.get("ankle_section", {}).get("section_id")
-        deduped: List[Dict[str, Any]] = []
-        local_seen: set[str] = set()
-
-        for ctx in contexts:
-            if not isinstance(ctx, dict):
-                continue
-            section_id = ctx.get("section_id")
-            if not section_id:
-                continue
-
-            is_ankle = bool(ctx.get("is_ankle"))
-
-            merged = merged_map.get(section_id)
-            if merged is None:
-                merged = dict(ctx)
-                merged["ankle_section_refs"] = []
-                merged_map[section_id] = merged
-            else:
-                merged["section_text"] = merged.get("section_text") or ctx.get("section_text")
-                merged["toc_title"] = merged.get("toc_title") or ctx.get("toc_title")
-                merged["start_page"] = _min_page(merged.get("start_page"), ctx.get("start_page"))
-                merged["end_page"] = _max_page(merged.get("end_page"), ctx.get("end_page"))
-                merged["is_ankle"] = merged.get("is_ankle") or is_ankle
-
-            if ankle_id and ankle_id not in merged["ankle_section_refs"]:
-                merged["ankle_section_refs"].append(ankle_id)
-
-            if section_id in local_seen:
-                continue
-
-            # 이미 다른 ankle에서 본 섹션이면 스킵(ankle 본인은 유지)
-            if section_id in global_seen_ids and not is_ankle:
-                continue
-
-            local_seen.add(section_id)
-            global_seen_ids.add(section_id)
-
-            merged_copy = dict(merged)
-            refs = merged_copy.get("ankle_section_refs") or []
-            merged_copy["ankle_section_refs"] = sorted(set(refs))
-            deduped.append(merged_copy)
-
-        res["context_sections"] = deduped
-        res["context_sections_unique_count"] = len(deduped)
-        cand.result = res
-
-    return candidates
-
-
-def _min_page(a: Any, b: Any) -> Any:
-    nums = [v for v in (a, b) if isinstance(v, (int, float))]
-    if nums:
-        return min(nums)
-    return a if isinstance(a, (int, float)) else b
-
-
-def _max_page(a: Any, b: Any) -> Any:
-    nums = [v for v in (a, b) if isinstance(v, (int, float))]
-    if nums:
-        return max(nums)
-    return a if isinstance(a, (int, float)) else b
 
 
 def _get_document_filter_section() -> str:
@@ -423,7 +395,40 @@ EXCLUDED_FIELD_PATTERNS = {
     'table_ids',
 }
 
-def _extract_essential_content(data: Dict[str, Any]) -> str:
+def _extract_toc_fields(data: Dict[str, Any]) -> Dict[str, Optional[str]]:
+    """TOC 관련 필드만 추출하여 별도 반환"""
+    target_keys = {'toc_summary', 'toc_core_text'}
+    collected: Dict[str, List[str]] = {}
+
+    def find(obj: Any):
+        if isinstance(obj, dict):
+            for k, v in obj.items():
+                if k.lower() in target_keys and isinstance(v, str) and v.strip():
+                    collected.setdefault(k.lower(), []).append(v.strip())
+                if isinstance(v, (dict, list)):
+                    find(v)
+        elif isinstance(obj, list):
+            for it in obj:
+                find(it)
+
+    find(data)
+
+    def pick_first(key: str, limit: Optional[int] = None) -> Optional[str]:
+        vals = collected.get(key)
+        if not vals:
+            return None
+        val = vals[0]
+        if limit and isinstance(val, str) and len(val) > limit:
+            return val[:limit] + "..."
+        return val
+
+    return {
+        "toc_summary": pick_first("toc_summary"),
+        "toc_core_text": pick_first("toc_core_text", limit=600),
+    }
+
+
+def _extract_essential_content(data: Dict[str, Any], include_toc: bool = True) -> str:
     """
     Neo4j 결과에서 핵심 정보만 추출하여 깔끔한 텍스트로 변환
     
@@ -452,7 +457,17 @@ def _extract_essential_content(data: Dict[str, Any]) -> str:
                 find_all_values(item, target_keys, results)
     
     # 핵심 필드들 수집
-    target_keys = {'text', 'fact', 'document_id', 'section_summary', 'subject', 'predicate', 'object'}
+    target_keys = {
+        'text',
+        'fact',
+        'document_id',
+        'section_summary',
+        'subject',
+        'predicate',
+        'object',
+    }
+    if include_toc:
+        target_keys = target_keys | {'toc_summary', 'toc_core_text'}
     collected = {}
     find_all_values(data, target_keys, collected)
     
@@ -472,7 +487,30 @@ def _extract_essential_content(data: Dict[str, Any]) -> str:
                     parts.append(f"[요약] {summary}")
                     seen_texts.add(summary)
                     break  # 첫 번째 유효한 요약만
-    
+
+    # toc_summary / toc_core_text도 추가 (가능하면 요약이 우선)
+    # include_toc=True일 때만 TOC 정보까지 content에 포함
+    if include_toc:
+        if 'toc_summary' in collected:
+            for summary in collected['toc_summary']:
+                if summary and isinstance(summary, str):
+                    summary = summary.strip()
+                    if summary and summary not in seen_texts:
+                        parts.append(f"[TOC 요약] {summary}")
+                        seen_texts.add(summary)
+                        break
+        if 'toc_core_text' in collected:
+            for core_text in collected['toc_core_text']:
+                if core_text and isinstance(core_text, str):
+                    core_text = core_text.strip()
+                    if core_text and core_text not in seen_texts:
+                        # 길면 잘라서 제공
+                        if len(core_text) > 600:
+                            core_text = core_text[:600] + "..."
+                        parts.append(f"[TOC 본문] {core_text}")
+                        seen_texts.add(core_text)
+                        break
+
     # text 필드 추출 (이미지 참조 제외)
     if 'text' in collected:
         for text_val in collected['text']:
