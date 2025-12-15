@@ -1,0 +1,45 @@
+# rag/schemas/types.py
+class Candidate(BaseModel):
+    ...
+    # TOC 관련 추가 필드 (Section과 연결된 상위 TOC 정보)
+    toc_summary: Optional[str] = None
+    toc_core_text: Optional[str] = None
+
+# rag_analyzer/prompts.py
+### Step 4: Scoring
+- Judge primarily on the section text, but also check whether the linked TOC summary/core_text(if exists) aligns with the user question.
+    - For example, if the question targets a specific topic/product/issue and asks for contact info (e.g., “who/where to contact for a specific department's issues”):
+        - The TOC summary is about that topic or related to that specific department, and
+        - The section actually provides answer-like contact info / URLs / responsible teams
+            → Raise the relevance score.
+        - If the section looks answer-like but the TOC context is about a different topic/department, do NOT raise the score just because it has a name/URL.
+- **1.0**: Contains the EXACT answer with specific values/names/dates
+- **0.8-0.9**: Contains strong answer or very helpful supporting information
+- **0.6-0.7**: Contains useful related information (contact info, procedures, references)
+- **0.4-0.5**: Contains marginally helpful context
+- **Below 0.4**: OMIT - Not useful enough
+
+...
+
+        # Cypher 쿼리 정보
+        cypher_info = ""
+        if getattr(candidate, "cypher_query", None):
+            cypher_info = f"\n사용된 Cypher 쿼리: {candidate.cypher_query}"
+
+        toc_block = ""
+        if getattr(candidate, "toc_summary", None) or getattr(candidate, "toc_core_text", None):
+            toc_lines = []
+            if getattr(candidate, "toc_summary", None):
+                toc_lines.append(f"TOC Summary: {candidate.toc_summary}")
+            if getattr(candidate, "toc_core_text", None):
+                toc_lines.append(f"TOC Core Text: {candidate.toc_core_text}")
+            toc_block = "\n".join(toc_lines)
+
+        # 텍스트 내용 추가 (각 후보마다 구분)
+        text_content = f"""
+# -------------------------- [{ref_id}] --------------------------
+{cypher_info}
+내용: {candidate.content}
+{toc_block if toc_block else ""}
+# ----------------------------------------------------------------
+"""
