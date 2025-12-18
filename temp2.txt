@@ -1,0 +1,48 @@
+# rewrite_query → cypher_filtering_node (키워드 실존 매핑 단계 제거)
+    builder.add_edge("rewrite_query", "cypher_filtering_node")
+
+--------------
+
+# rewrite_query → cypher_filtering_node (키워드 실존 매핑 단계 제거)
+    builder.add_edge("rewrite_query", "cypher_filtering_node")
+
+--------------
+
+# - Neo4j에 저장된 Keyword로 재매핑/재검색하여 치환하는 단계는 제거
+        query_params["keyword_values"] = state.raw_keywords or []
+
+--------------
+
+# keyword_mapping_node를 우회/비활성화한 경우 keyword_values가 비게 되므로 raw_keywords로 폴백
+        if not keyword_values:
+            keyword_values = state.raw_keywords or []
+
+---------------
+# keyword_mapping_node를 우회/비활성화한 경우 keyword_values가 비게 되므로 raw_keywords로 폴백
+        if not keyword_values:
+            keyword_values = state.raw_keywords or []
+
+----------------
+# keyword_mapping_node를 우회/비활성화해도 동작하도록 폴백 처리
+    keyword_dict = state.keyword_mapping_results or {}
+    canonical_dict = state.canonical_mapping_results or {}
+
+if not keyword_values:
+        keyword_values = state.raw_keywords or []
+
+----------------
+
+# NOTE: 키워드 필터는 "프론트에 노출되는 최종 키워드(raw_keywords)" 기준으로 동작해야 한다.
+    #       (실존 Keyword 재검색/재매핑 단계 제거)
+    if state.raw_keywords:
+        keyword_filter_section = ""
+
+
+----------------
+# keyword_mapping_node를 우회/비활성화한 경우 raw_keywords로 폴백
+    if not keyword_values:
+        keyword_values = state.raw_keywords or []
+------------------
+# keyword_mapping_node를 우회/비활성화한 경우 keyword_values가 비게 되므로 raw_keywords로 폴백
+        if not keyword_values:
+            keyword_values = state.raw_keywords or []
