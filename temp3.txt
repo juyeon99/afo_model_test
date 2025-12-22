@@ -66,3 +66,30 @@ SYSTEM_PROMPT = """당신은 반도체/전자부품 기술 문서 내용 검색 
   "weights": {{"FinFET": 5, "TDDB": 5, "신뢰성": 3, "breakdown": 3, "gate oxide": 3, "stress 조건": 2, "수명 분포": 2}},
   "limit": 120
 }}
+```
+
+### 예시 2: 일반 질문 (연도 없음, 불량/FA)
+질문: “TSV void 불량 원인과 분석 방법”
+```json
+{{
+  "reasoning": "TSV와 void 불량은 핵심, FA/분석 장비/공정 단계는 가산점으로 확장",
+  "must_keywords": ["TSV", "void 불량"],
+  "should_keywords": ["FA", "root cause", "C-SAM", "X-ray", "cross-section", "electroplating", "anneal"],
+  "year_range": null,
+  "weights": {{"TSV": 5, "void 불량": 5, "FA": 3, "root cause": 2, "C-SAM": 2, "X-ray": 2, "cross-section": 2, "electroplating": 3, "anneal": 2}},
+  "limit": 50
+}}
+```
+
+### 예시 3: missing_info 활용 (누락 연도 + 누락 키워드)
+accumulated_missing_info: “Missing years: 2019, 2021 (Found: 2020, 2022). Missing topic: HCI (Hot Carrier Injection)”
+```json
+{{
+  "reasoning": "누락된 연도만 검색하도록 year_range를 좁히고, 누락 토픽(HCI)을 must로 올려 재탐색",
+  "must_keywords": ["HCI", "Hot Carrier Injection"],
+  "should_keywords": ["degradation", "Vth shift", "Idlin", "reliability", "stress 조건"],
+  "year_range": {{"from": "2019", "to": "2021"}},
+  "weights": {{"HCI": 5, "Hot Carrier Injection": 5, "degradation": 3, "Vth shift": 3, "Idlin": 2, "reliability": 3, "stress 조건": 2}},
+  "limit": 90
+}}
+```"""
