@@ -9,8 +9,8 @@ Enhanced with batched processing (50 headers per batch) and structured output:
 - Preserves chronological order when merging batch results
 """
 
+import asyncio
 import logging
-import os
 import re
 from typing import Any, Dict, List
 
@@ -79,24 +79,29 @@ async def process_header_batch(
     system_prompt = (
         "You are a document structure expert. Process this BATCH of section headers and FILTER for valid TOC entries. "
         "CRITICAL: Analyze the ENTIRE batch to understand document hierarchy based on CONTENT, not input order.\n\n"
-        "1) KEEP only headers that should become TOC entries, and\n"
-        "2) Assign a hierarchical_index to each kept header.\n\n"
 
         "FILTERING CRITERIA - KEEP headers that are:\n"
         "- **Standard insurance policy legal headings**:\n"
-        "  - Examples: '제 1관 ...', '제1관 ...', '제 1절 ...', '제 1조 ...', '제1조 ...'\n"
+        "  - Examples: '제 1절 ...', '제 1관 ...', '제1관 ...', '제 1 조 ...', '제1조 ...'\n"
         "- Roman TOC-like headings:\n"
         "  - Examples: 'I. 약관 안내', 'II. 보장 내용'\n"
         "- Appendices / tables / supplementary sections:\n"
-        "  - Examples: '【별표】', '별표 1', '별표', '부록', '분류표', '부칙'\n"
+        "  - Examples: '【별표】', '별표 1', '별표', '부록', '분류표'\n"
         "- **Specific(possibly long) rider/policy titles even WITHOUT numbering/prefix**:\n"
         "  - Examples:\n"
         "    - 'NGS유전자패널검사비용지원S특약(갱신형) 무배당 약관'\n"
         "    - '단체취급특약 약관'\n"
         "  - Heuristic: if it looks like a product/rider name (keywords like '특약', '약관'), treat it as a TOC entry.\n\n"
+        "  - CRITICAL RESET RULE:\n"
+        "    - **Long rider/policy titles (often ending with '특약', '약관')**, even if that appear after a chain of 절/관/조 headings, **MUST start a NEW TOP-LEVEL number**.\n"
+        "    - **Do NOT nest these titles under the preceding 절/관/조 index. They represent a new document block.**\n"
+        "    - Example: if the current deepest index is '15.32.2.6.2.12.7', then '스마트연금전환특약(K3.1) 무배당 약관' should be '16' (NOT '15.32.2.6.2.12.8' nor '15.32.2.6.2.12.7.1').\n\n"
         
         "FILTERING CRITERIA - REJECT headers that are:\n"
-        "✗ Generic/vague phrases: '내용', '그 내용', '기타', '참고', '비고', '사례', '주의사항'\n"
+        "✗ Generic/vague phrases: '내용', '그 내용', '기타', '참고', '비고', '【사례】', '【주의사항】', '【유의사항】'\n"
+        "✗ Bracketed examples/notes that should NOT be TOC (especially BETWEEN 조 headings):\n"
+        "  - Reject things like: '【...예시...】', '【...사례...】', '【...주의사항...】', '【...유의사항...】', '【제 n조의 ... 예시】', and any other bracketed examples/notes that are not appendix/table markers.\n"
+        "  - Exception: KEEP true appendices/tables like '【별표】', '【별표 1】', '별표', '부록', '분류표' (those are TOC).\n"
         "✗ Transitional text: '다음과 같다', '아래와 같이'\n"
         "✗ Page headers/footers or document metadata\n"
         "✗ List item markers without substance (e.g., just 'ㅇ', '①', '-')\n"
@@ -104,15 +109,41 @@ async def process_header_batch(
         "✗ Fragments or incomplete sentences\n\n"
 
         "HIERARCHICAL INDEX ASSIGNMENT (CRITICAL - READ CAREFULLY):\n"
-        "- hierarchical_index must be a string using dots for hierarchy, e.g., '1', '1.2', '3.1.4'\n"
-        "- Convert Roman numerals (I, II, III, …) into Arabic numbers in order (I→1, II→2, III→3).\n"
+        "Step 1: FIRST, scan ALL headers in the batch to identify explicit patterns:\n"
+        "   - hierarchical_index must be a string using dots for hierarchy, e.g., '1', '1.2', '3.1.4'\n"
+        "   - Convert Roman numerals (I, II, III, …) into Arabic numbers in order (I→1, II→2, III→3).\n"
+
+        "Step 2: DETECT nested heading patterns (CRITICAL EDGE CASE):\n"
         "- For Korean legal headings, treat unit levels as different hierarchy depths (IMPORTANT):\n"
-        "  - 절 (largest) > 관 > 조 > 항 (smallest)\n"
+        "  - 절 (largest) > 관 > 조 (smallest)\n"
         "  - Do NOT assign the same index to '제 1관' and '제 1조'. Even if both have '1', they are different levels.\n"
+        "  - If 'n 조' follows 'n 관' with the same number, nest it one level deeper under that 관.\n"
+        "    - Example: '제 n 관 ...' = '15.32.2' ⇒ subsequent '제 n 조 ...' = '15.32.2.1'\n"
         "  - Example mapping (recommended):\n"
         "    - '제 1관 ...' → '1'\n"
         "    - '제 1조 ...' → '1.1'\n"
         "    - '제 2조 ...' → '1.2'\n"
+
+        "\n"
+        "  - CONTINUITY RULE (조 numbering must stay connected to the SAME 관):\n"
+        "    - If you are inside a 관 block (e.g., '제 1관 ...' already started) and you see '제 1조', '제 2조', ...,\n"
+        "      then the subsequent '제 3조' MUST continue as the NEXT sibling 조 under that SAME 관 UNLESS the long rider/policy titles starts a new major block.\n"
+        
+        "    - If OTHER valid TOC entries appear BETWEEN consecutive 조 items,\n"
+        "      you MUST NEST those intervening entries UNDER the MOST RECENT 조 (as its child), NOT as a new sibling of the 관.\n"
+        "      **NO BACKTRACKING**: you MUST NOT jump to a higher-level sibling index (e.g., 2.2.2.7) and then later return to a previous prefix such as 2.2.2.6.x.\n"
+        
+        "    - Example:\n"
+        "      - '제 1관 ...' → 1\n"
+        "      - '제 1조 ...' → 1.1\n"
+        "      - '제 2조 ...' → 1.2\n"
+        "      - 'other valid toc between 조 ...' → 1.2.1 (MUST be a child of the most recent TOC item: 1.2)\n"
+        "      - '【예시】' → REJECT\n"
+        "      - '제 3조 ...' → 1.3 (MUST be sibling of 1.2; NOT 1.2.2)\n"
+        
+        "- For long rider/policy titles without numbering:\n"
+        "  - If it starts a new major block, assign a new top-level number (reset to the NEXT ROOT, e.g., previous root 15 → new root 16), regardless of prior 절/관/조 depth.\n"
+        "  - Only if it is clearly labeled as a subsection of an existing rider block should it be nested; default to NEW TOP-LEVEL when unsure.\n\n"
         "  - Example mapping if rider/policy titles exist (recommended):\n"
         "    - 'NGS유전자패널검사비용지원S특약(갱신형) 무배당 약관' → '1'\n"
         "    - '제 1절 ...' → '1.1'\n"
@@ -121,10 +152,21 @@ async def process_header_batch(
         "    - '제 1관 ...' → '1.2.1'\n"
         "    - '제 1-1조 ...' → '1.2.1.1'\n"
         "    - '제 1-2조 ...' → '1.2.1.2'\n"
-        "- For long rider/policy titles without numbering:\n"
-        "  - If it starts a new major block, assign a new top-level number.\n"
-        "  - If it clearly belongs under an ongoing major block, assign a natural child index.\n\n"
-        "Do not blindly assign 1,2,3… by input order. Prioritize explicit patterns: '제X절/제X관/조/항/호', Roman numerals, and long rider/policy titles.\n"
+        "    - **'단체취급특약 약관' → '2'**\n"
+        "    - '제 1관 ...' → '2.1'\n"
+        "    - '제 1조 ...' → '2.1.1'\n"
+        "    - **'【부록】 법령내용' → '3'** (BACKTRACKING MUST NOT HAPPEN HERE: after you advance to 3, a later TOC item MUST NOT revert to 2.x or lower)\n"
+        "    - **'제 4-1조 ...' → '3.1'**\n"
+        "    - **'제 9조 ...' → '3.2'**\n"
+        "Do not blindly assign 1,2,3… by input order. Prioritize explicit patterns: '절/관/조', Roman numerals, and long rider/policy titles.\n"
+
+        "EDGE CASE - Nested numbering that restarts:\n"
+        "Batch: ['1. 주제', '1. 소주제1', '2. 소주제2', '3. 소주제3', '2. 주제2']\n"
+        "WRONG assignment: ['1', '1', '2', '3', '2'] ❌ (no duplicates or backtracking!)\n"
+        "CORRECT assignment: ['1', '1.1', '1.2', '1.3', '2'] ✅\n"
+        "Reasoning: Repeated '1' after main '1' indicates subsection. Convert to hierarchical.\n\n"
+
+        "IMPORTANT: DO NOT just assign 1, 2, 3, 4, 5... based on input order. LOOK AT THE TEXT CONTENT!"
     )
 
     if previous_context:
@@ -143,6 +185,9 @@ async def process_header_batch(
             f"3. NO SKIPPING NUMBERS:\n"
             f"   - Sequential must be continuous: 14, 15, 16, 17...\n"
             f"   - Hierarchical must be logical: 1.1, 1.2, 1.3 OR 1.1, 2, 3...\n"
+            f"4. RIDER RESET EXCEPTION (IMPORTANT):\n"
+            f"   - If you see a long rider/policy title (keywords: '특약', '약관', product name) that clearly starts a new document block, immediately start a NEW top-level number (previous root 15 → new root 16), even if the prior index was deep like '15.32.2.6'.\n"
+            f"   - Do NOT continue deep chains for such titles; they are new roots by default unless explicitly marked as a subsection of an existing rider.\n"
             f"{'='*60}\n"
         )
 
@@ -156,18 +201,21 @@ async def process_header_batch(
         "Below is a list of section_header candidates detected by Docling.\n"
         "Keep only the items that should become TOC entries for insurance policy/rider documents, and assign hierarchical_index to each kept item.\n\n"
         + "\n".join(header_list) + "\n\n"
-        "Workflow:\n"
+        "PROCESSING WORKFLOW:\n\n"
         "1) Scan all candidates to detect patterns:\n"
-        "   - 제X절 / '제X관 / 제X조 / 제X항'\n"
+        "   - 제X절 / '제X관 / 제X조'\n"
         "   - Roman numerals\n"
         "   - Long rider/policy titles without numbering (usually ends with '약관')\n"
-        "2) FILTER:\n"
-        "   - REJECT: repeated headers/footers, TOC page label ('목차'), noise phrases, marker-only items\n"
-        "   - KEEP: meaningful structural headings including 절/관/조/항, roman headings, and long rider/policy titles\n"
+        "2) FILTER invalid headers\n"
+        "   - REMOVE: repeated headers/footers, TOC page label ('목차'), noise phrases, marker-only items\n"
+        "   - KEEP: meaningful structural headings including 절/관/조, roman headings, and long rider/policy titles\n"
         "3) Assign hierarchical_index with dot hierarchy:\n"
         "   - Preserve explicit numbering when possible (convert Roman numerals to Arabic numbers)\n"
-        "   - Ensure 절/관/조/항 become different hierarchy depths\n"
+        "   - Ensure 절/관/조 become different hierarchy depths\n"
         "   - IMPORTANT: '제 1관' and '제 1조' must NOT share the same index; use dot hierarchy.\n"
+        "   - IMPORTANT CONTINUITY (NO BACKTRACKING): If '제 n조' continues within the same 관, keep 조 as siblings (…1, …2, …3...).\n"
+        "     If other valid TOC entries appear BETWEEN 조 items, NEST them under the MOST RECENT 조 as children (…1.1, …1.2, etc.).\n"
+        "     Never assign an intervening item a higher-level sibling index that would force later items to return to the prior 관 prefix.\n"
         "4) If previous_context is provided, continue top-level numbering naturally when appropriate.\n\n"
         
         "FEW-SHOT EXAMPLES (Learn from these):\n\n"
@@ -210,11 +258,33 @@ async def process_header_batch(
     llm = get_llm(llm_config)
     structured_llm = llm.with_structured_output(BatchedSectionHeaders, method="function_calling")
 
+    max_attempts = 2  # 1 initial try + 1 retry for transient LLM/network issues
+
     try:
-        result = structured_llm.invoke([
-            SystemMessage(content=system_prompt),
-            HumanMessage(content=user_prompt)
-        ])
+        result = None
+        last_exc: Exception | None = None
+        for attempt in range(1, max_attempts + 1):
+            try:
+                result = structured_llm.invoke([
+                    SystemMessage(content=system_prompt),
+                    HumanMessage(content=user_prompt)
+                ])
+                break
+            except Exception as e:
+                last_exc = e
+                if attempt < max_attempts:
+                    # Common transient failure: "incomplete chunked read"
+                    logger.warning(
+                        f"[DoclingStructure] Batch {batch_idx + 1} LLM attempt {attempt}/{max_attempts} failed: {e} "
+                        f"(retrying once after short backoff)"
+                    )
+                    await asyncio.sleep(1.0 * attempt)
+                else:
+                    raise
+
+        if result is None:
+            # Defensive: should not happen unless invoke returns None without raising
+            raise RuntimeError(f"LLM returned no result for batch {batch_idx + 1}") from last_exc
 
         # Build lookup from input batch for toc_id and position
         input_lookup: Dict[str, Dict[str, Any]] = {}
@@ -271,20 +341,22 @@ async def process_header_batch(
                     logger.debug(f"[DoclingStructure] Assigned sequential hierarchical_index='{next_sequential}' for unnumbered: '{text[:50]}'")
                     next_sequential += 1
             else:
-                # LLM assigned - verify if it matches text numbering
-                text = assignment.section_text
-                # Always prioritize text numbering over LLM assignment
-                match = re.match(r'^(?:\()?(\d+(?:\.\d+)*)(?:\)|\.|-|:)?\s*', text)
-                if match and match.group(1):
-                    # Use the numbering from text (more reliable)
-                    extracted = match.group(1)
-                    if extracted != assignment.hierarchical_index:
-                        logger.info(
-                            f"[DoclingStructure] Correcting LLM assignment: '{assignment.hierarchical_index}' → '{extracted}' "
-                            f"(from text: '{text[:50]}')"
-                        )
-                    assignment.hierarchical_index = extracted
-                # else: keep LLM-assigned sequential number
+                # # LLM assigned - verify if it matches text numbering
+                # text = assignment.section_text
+                # # Always prioritize text numbering over LLM assignment
+                # match = re.match(r'^(?:\()?(\d+(?:\.\d+)*)(?:\)|\.|-|:)?\s*', text)
+                # if match and match.group(1):
+                #     # Use the numbering from text (more reliable)
+                #     extracted = match.group(1)
+                #     if extracted != assignment.hierarchical_index:
+                #         logger.info(
+                #             f"[DoclingStructure] Correcting LLM assignment: '{assignment.hierarchical_index}' → '{extracted}' "
+                #             f"(from text: '{text[:50]}')"
+                #         )
+                #     assignment.hierarchical_index = extracted
+                # # else: keep LLM-assigned sequential 
+                
+                pass    # LLM이 부여한 hierarchical_index 그대로 유지
 
             # EDGE CASE FIX: Detect nested numbering pattern (only fix clear duplicates)
             final_index = assignment.hierarchical_index
@@ -339,7 +411,7 @@ async def process_header_batch(
         )
 
     except Exception as e:
-        logger.warning(f"[DoclingStructure] Batch {batch_idx + 1} LLM processing failed: {e}")
+        logger.warning(f"[DoclingStructure] Batch {batch_idx + 1} LLM processing failed after {max_attempts} attempt(s): {e}")
         # Fallback: generate basic assignments for this batch
         fallback_assignments = []
         for h in batch_headers:
@@ -363,7 +435,7 @@ async def process_header_batch(
 
 def generate_assignments_from_docling_body(
     docling_body: List[Dict[str, Any]],
-    max_toc_depth: int = 2
+    max_toc_depth: int = 5
 ) -> List[SectionHeaderAssignment]:
     """Generate fallback section header assignments from docling body
 
@@ -499,70 +571,34 @@ async def clean_docling_section_headers(docling_body: List[Dict[str, Any]], batc
 
             logger.info(f"[DoclingStructure] Batch {batch_idx // batch_size + 1} completed: {len(batch_result.batch_assignments)} valid headers")
 
-        # Final result - TOC 항목 수가 너무 많으면 단순화
-        MAX_TOC_ITEMS = 30  # 최대 TOC 항목 수
-
-        if len(all_assignments) > MAX_TOC_ITEMS:
-            logger.warning(
-                f"[DoclingStructure] Too many TOC items ({len(all_assignments)} > {MAX_TOC_ITEMS}), "
-                "filtering to top-level items only"
-            )
-            # 상위 레벨(깊이 1-2)만 유지
-            filtered = [
-                a for a in all_assignments
-                if len(a.hierarchical_index.split('.')) <= 2
-            ]
-            if filtered:
-                all_assignments = filtered
-                logger.info(f"[DoclingStructure] Filtered to {len(all_assignments)} top-level TOC items")
-            else:
-                # 모든 항목이 깊은 레벨이면 처음 MAX_TOC_ITEMS개만 유지
-                all_assignments = all_assignments[:MAX_TOC_ITEMS]
-                logger.info(f"[DoclingStructure] Truncated to first {MAX_TOC_ITEMS} TOC items")
+        # Final result - TOC 항목 수가 너무 많으면 단순화 => 보험약관 특성을 고려하여 비활성화
+        # MAX_TOC_ITEMS = 100  # 최대 TOC 항목 수
+        #
+        # if len(all_assignments) > MAX_TOC_ITEMS:
+        #     logger.warning(
+        #         f"[DoclingStructure] Too many TOC items ({len(all_assignments)} > {MAX_TOC_ITEMS}), "
+        #         "filtering to top-level items only"
+        #     )
+        #     # 상위 레벨(깊이 1-5)만 유지
+        #     filtered = [
+        #         a for a in all_assignments
+        #         if len(a.hierarchical_index.split('.')) <= 5
+        #     ]
+        #     if filtered:
+        #         all_assignments = filtered
+        #         logger.info(f"[DoclingStructure] Filtered to {len(all_assignments)} top-level TOC items")
+        #     else:
+        #         # 모든 항목이 깊은 레벨이면 처음 MAX_TOC_ITEMS개만 유지
+        #         all_assignments = all_assignments[:MAX_TOC_ITEMS]
+        #         logger.info(f"[DoclingStructure] Truncated to first {MAX_TOC_ITEMS} TOC items")
 
         final_result = CleanedSectionHeaders(assignments=all_assignments)
 
         logger.info(f"[DoclingStructure] BATCHED PROCESSING COMPLETE: {total_headers} → {len(all_assignments)} valid headers across {(total_headers + batch_size - 1) // batch_size} batches")
 
-        # Log extracted (non-rejected) TOC candidates for terminal debugging
-        # - Default: log first N items (to avoid flooding terminals on huge PDFs)
-        # - Override with env vars:
-        #   - DOCSTRUCT_LOG_CLEANED_HEADERS_MAX: max items to log (default 50)
-        #   - DOCSTRUCT_LOG_REJECTED_HEADERS: "1" to also log rejected header samples
-        max_log_items = int(os.getenv("DOCSTRUCT_LOG_CLEANED_HEADERS_MAX", "50") or "50")
-        logger.info(
-            "[DoclingStructure] ✅ KEPT (non-rejected) TOC candidates: %s items (logging first %s). "
-            "Set DOCSTRUCT_LOG_CLEANED_HEADERS_MAX to increase.",
-            len(all_assignments),
-            min(len(all_assignments), max_log_items),
-        )
-        for i, assignment in enumerate(all_assignments[:max_log_items]):
-            logger.info(
-                "[DoclingStructure] TOC#%s toc_id=%s pos=%s idx='%s' title='%s'",
-                i,
-                assignment.toc_id,
-                assignment.position,
-                assignment.hierarchical_index,
-                assignment.section_text,
-            )
-
-        # Optional: log rejected headers (useful to tune filtering prompt)
-        if os.getenv("DOCSTRUCT_LOG_REJECTED_HEADERS", "0") == "1":
-            kept_positions = {a.position for a in all_assignments}
-            rejected = [h for h in section_headers if h.get("position") not in kept_positions]
-            logger.info(
-                "[DoclingStructure] ❌ REJECTED section_header candidates: %s items (logging first %s).",
-                len(rejected),
-                min(len(rejected), max_log_items),
-            )
-            for i, h in enumerate(rejected[:max_log_items]):
-                logger.info(
-                    "[DoclingStructure] REJECT#%s toc_id=%s pos=%s text='%s'",
-                    i,
-                    h.get("toc_id"),
-                    h.get("position"),
-                    h.get("section_text"),
-                )
+        # Log sample results
+        for i, assignment in enumerate(all_assignments[:5]):
+            logger.info(f"[DoclingStructure] Final Result #{i}: toc_id={assignment.toc_id}, hierarchical_index='{assignment.hierarchical_index}', section_text='{assignment.section_text}', position={assignment.position}")
 
         if not all_assignments:
             logger.warning(f"[DoclingStructure] No valid headers from batched processing; using fallback")
